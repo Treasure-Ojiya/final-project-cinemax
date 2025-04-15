@@ -1,0 +1,344 @@
+body {
+  background-color: #131720;
+}
+
+/* Fixed header */
+.header {
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+}
+
+/* Dropdown menu styling */
+.dropdown-menu {
+  border: none;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Nested dropdown positioning */
+.dropend .dropdown-menu {
+  margin-top: -10px;
+  margin-left: 5px;
+}
+
+/* Mobile menu full width */
+@media (max-width: 991.98px) {
+  .navbar-collapse {
+    position: fixed;
+    top: 80px;
+    left: 0;
+    right: 0;
+    background-color: #131720;
+    padding: 20px;
+    max-height: calc(100vh - 80px);
+    overflow-y: auto;
+  }
+
+  .dropdown-menu {
+    position: static !important;
+    transform: none !important;
+    margin-top: 10px;
+    margin-bottom: 15px;
+  }
+}
+
+/* Active nav link color */
+.nav-link.active,
+.dropdown-item:active,
+.dropdown-item.active {
+  color: #2f80ed !important;
+  background-color: #131720;
+}
+
+/* Hover effects */
+.nav-link:hover,
+.dropdown-item:hover {
+  color: #2f80ed !important;
+  transition: 0.3s ease;
+}
+
+/* .swiperI {
+  width: 100%;
+  height: 100%;
+}
+
+.hero-swiper {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-swiper img {
+width: 413px;
+  height:329px;
+  object-fit: cover;
+}
+
+.hero-swiper {
+  padding: 0 10px;
+} */
+
+/* .swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+} */
+
+.swiperI {
+  width: 100%;
+  height: auto; /* Adjust height to fit content */
+}
+
+.swiper-wrapper {
+  display: flex; /* Ensure slides are laid out horizontally */
+}
+
+.swiper-slide {
+  width: 413px; /* Set the fixed width of each slide */
+  height: 329px; /* Set the fixed height of each slide */
+  flex-shrink: 0; /* Prevent slides from shrinking */
+  display: flex; /* Center the image within the slide */
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 768px) {
+  .swiper-slide {
+    width: 100%; /* Make slides full width on smaller screens */
+    height: auto; /* Adjust height to fit content */
+  }
+  .hero-swiper img {
+    width: 100%; /* Make the image fill its container */
+    height: 100%;
+    object-fit: contain; /* Ensure the entire image is visible within the fixed dimensions */
+  }
+}
+
+/* catalogue */
+.catalogue-nav {
+  background-color: #151f30;
+}
+
+.btn-category .btn-tabs {
+  background-color: #131720;
+  color: #fff;
+  border: 0;
+  position: relative;
+  transition: all 0.3s ease;
+  font-size: 14px;
+  /* Smooth transition for all properties */
+}
+
+.btn-category .btn-tabs::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #007bff;
+  transition: width 0.3s ease;
+  /* Smooth transition for the underline */
+}
+
+.btn-category .btn-tabs.active {
+  background-color: #007bff1a !important;
+  color: #007bff !important;
+  border: 0;
+}
+
+.btn-category .btn-tabs.active::after {
+  width: 100%;
+  /* Full width underline for active tab */
+}
+
+/* Optional: Add hover effect */
+/* .btn-category .btn-tabs:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+} */
+
+
+.play-button {
+  opacity: 0;
+  transform: scale(1.01);
+}
+.play-button:hover {
+  opacity: 1;
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+}
+
+.card__title {
+  font-size: 18px;
+}
+
+.description {
+  font-size: 14px;
+  color: #a0a0a0;
+  margin-top: 5px;
+}
+
+.custom-card:hover {
+  opacity: 1;
+}
+
+.load-more-btn {
+  background-color: #151f30;
+}
+
+.load-more-btn:hover {
+  background-color: #2f80ed;
+  color: white;
+  transition: background-color 1s ease;
+}
+
+@media (max-width: 768px) {
+  .btn-category {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .btn-category .btn-tabs {
+    flex: 1;
+    text-align: center;
+    padding: 8px 4px;
+  }
+}
+
+@media (max-width: 576px) {
+  .nav-catalogue {
+    padding: 0.5rem !important;
+  }
+  
+  .form-select {
+    font-size: 0.875rem;
+  }
+}
+
+/* Subscription */
+.swiperII {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  /* background: #fff; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Custom arrow styling */
+.swiper-button-prev {
+  position: absolute;
+  top:50;
+  left:0;
+  color: white; /* Arrow color */
+  background: rgba(0, 0, 0, 0.7);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+  z-index: 10;
+}
+
+.swiper-button-next {
+  position: absolute;
+  top:50;
+  right:0;
+  color: white; /* Arrow color */
+  background: rgba(0, 0, 0, 0.7);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+  z-index: 10;
+}
+
+.swiper-button-prev:hover,
+.swiper-button-next:hover {
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  font-size: 20px; /* Adjust arrow size */
+}
+
+/* Position arrows */
+/* .swiper-button-prev {
+  left: 10px;
+}
+
+.swiper-button-next {
+  right: 10px;
+} */
+
+@media (max-width: 768px) {
+  .swiperII{
+    position:relative;
+  }
+
+  .swiper-slide {
+    width: 100%; /* Make slides full width on smaller screens */
+    height: auto; /* Adjust height to fit content */
+  }
+  .sub-img {
+    width: 100%; /* Make the image fill its container */
+    height: 100%;
+    object-fit: cover; /* Ensure the entire image is visible within the fixed dimensions */
+  }
+  .swiper-button-prev
+  {
+    position: absolute;
+    top: 80px;
+    left: 2px;
+  }.swiper-button-next
+  {
+    position: absolute;
+    top: 80px;
+    right: 2px;
+  }
+}
+
+/* Plan cards */
+.plan-card {
+  background-color: #151f30;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.plan-card-2 {
+  background-color: #2c71d1;
+}
+
+.regular-h4 {
+  border-bottom: 1px solid #2f80ed1a;
+}
+
+.regular-h4 {
+  border-bottom: 1px solid #044ba81a;
+}
+
+.plan-price {
+  border-top: 1px solid rgba(47, 128, 237, 0.1);
+}
+
+.btn-select {
+  background-color: #131720;
+}
+
+/* Footer */
+footer {
+  background-color: rgb(19, 24, 34) !important;
+}

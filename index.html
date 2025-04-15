@@ -1,0 +1,1739 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CineMax</title>
+    <!-- <link rel="stylesheet" href=""> -->
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+
+    <link
+      href="css/main.min.css"
+      rel="stylesheet"
+      
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <!-- <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+    /> -->
+
+    <link rel="stylesheet" href="index.css" />
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script> -->
+  </head>
+  <body>
+    <header class="header py-4">
+      <div class="container">
+        <nav
+          class="navbar navbar-expand-lg navbar-dark p-0 d-flex justify-content-between align-items-center"
+        >
+          <!-- Mobile menu button -->
+          <div class="d-flex">
+            <button
+              class="navbar-toggler border-0 p-0 d-lg-none"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarContent"
+              aria-controls="navbarContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span
+                ><img
+                  src="icons/menu-alt-1-svgrepo-com.svg"
+                  alt="menuTOggler"
+                  class="img-fluid"
+                  width="40"
+                  height="40"
+              /></span>
+            </button>
+
+            <!-- Logo -->
+            <a class="navbar-brand ms-2 ms-lg-0" href="#">
+              <h5 class="text-white">
+                Cine<span class="text-danger">Max</span>
+              </h5>
+            </a>
+          </div>
+
+          <!-- Desktop navigation -->
+          <div class="collapse navbar-collapse order-lg-2" id="navbarContent">
+            <ul
+              class="navbar-nav mx-auto mb-2 mb-lg-0 justify-content-center gap-2"
+            >
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link d-flex align-items-end text-white d-inline-flex align-items-end gap-0 fs-6"
+                  href="#"
+                  id="homeDropdown"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Home
+                  <img
+                    src="icons/dot-small-svgrepo-com.svg"
+                    alt=""
+                    width="20"
+                    height="20"
+                  />
+                </a>
+                <ul
+                  class="dropdown-menu rounded-3 bg-dark"
+                  aria-labelledby="homeDropdown"
+                >
+                  <li>
+                    <a class="dropdown-item text-white" href="#"
+                      >Home style 1</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item text-white" href="#"
+                      >Home style 2</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item text-white" href="#"
+                      >Home style 3</a
+                    >
+                  </li>
+                </ul>
+              </li>
+
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link text-white d-inline-flex align-items-end gap-0"
+                  href="#"
+                  id="catalogDropdown"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Catalogue
+                  <img
+                    src="icons/dot-small-svgrepo-com.svg"
+                    alt=""
+                    width="20"
+                    height="20"
+                  />
+                </a>
+                <ul
+                  class="dropdown-menu rounded-3 p-2 bg-dark"
+                  aria-labelledby="navbarDropdownCatalogue"
+                >
+                  <li>
+                    <a class="dropdown-item text-white" href="#">Catalogue</a>
+                  </li>
+                  <li class="dropdown-submenu">
+                    <a
+                      class="dropdown-item nested-list d-inline-flex align-items-center text-white"
+                      href="#"
+                      id="nestedgenres"
+                      role="button"
+                    >
+                      Catalogue dropdown
+                      <img
+                        src="icons/dot-svgrepo-com-primary.svg"
+                        alt=""
+                        width="40"
+                        height="40"
+                      />
+                    </a>
+                    <ul
+                      class="dropdown-menu dropdown-menu-end bg-dark"
+                      aria-labelledby="nestedgenres"
+                    >
+                      <li>
+                        <a class="dropdown-item text-white" href="#">Action</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item text-white" href="#"
+                          >Biography</a
+                        >
+                      </li>
+                      <li>
+                        <a class="dropdown-item text-white" href="#"
+                          >Documentary</a
+                        >
+                      </li>
+                      <li>
+                        <a class="dropdown-item text-white" href="#">Horror</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item text-white" href="#">Romance</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item text-white" href="#">Musical</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a class="dropdown-item text-white" href="#"
+                      >Category Style 1</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item text-white" href="#"
+                      >Category Style 2</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item text-white" href="#"
+                      >Details Style 1</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item text-white" href="#"
+                      >Details Style 2</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item text-white" href="#"
+                      >Details Style 3</a
+                    >
+                  </li>
+                </ul>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#">Pricing plans</a>
+              </li>
+
+              <li class="nav-item">
+                <a
+                  class="nav-link text-white d-inline-flex align-items-end gap-0"
+                  href="#"
+                >
+                  LIVE
+                  <img
+                    src="icons/dot-svgrepo-com.svg"
+                    alt=""
+                    width="20"
+                    height="20"
+                  />
+                </a>
+              </li>
+
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link"
+                  href="#"
+                  id="moreDropdown"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  <img
+                    src="icons/dot-menu-more-2-svgrepo-com.svg"
+                    alt=""
+                    width="20"
+                    height="20"
+                  />
+                </a>
+                <ul
+                  class="dropdown-menu dropdown-menu-end rounded-3 p-2 bg-dark"
+                  style="max-height: 200px; overflow-y: auto"
+                  aria-labelledby="moreDropdown"
+                >
+                  <li>
+                    <a class="dropdown-item text-white" href="#">About us</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item text-white" href="#">Profile</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item text-white" href="#">Contacts</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item text-white" href="#">Interview</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item text-white" href="#">Admin pages</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item text-white" href="#"
+                      >Privacy policy</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item text-white" href="#">Sign in</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item text-white" href="#">Sign up</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item text-white" href="#"
+                      >Forgot password</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item text-white" href="#">404 Page</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Search and Sign-in -->
+          <div class="col-4 d-flex align-items-center order-lg-3">
+            <!-- Search form - visible on desktop -->
+            <form class="d-none d-lg-flex me-3">
+              <div class="input-group">
+                <input
+                  class="form-control rounded-start-4 border-0"
+                  type="search"
+                  placeholder="I'm looking for..."
+                  aria-label="Search"
+                />
+                <span
+                  class="btn btn-link input-group-text bg-white rounded-end-4 border-0text-decoration-none"
+                  type="submit"
+                >
+                  <img
+                    src="icons/search-4-svgrepo-com.svg"
+                    alt=""
+                    width="20"
+                    height="20"
+                  />
+                </span>
+              </div>
+            </form>
+
+            <!-- Search toggle - visible on mobile -->
+            <button
+              class="btn btn-link d-lg-none me-3 p-0"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#mobileSearch"
+            >
+              <img
+                src="icons/search-4-svgrepo-com.svg"
+                alt=""
+                class="img-fluid"
+                width="20"
+                height="20"
+              />
+            </button>
+
+            <!-- Sign in -->
+            <a
+              href="#"
+              class="text-white text-decoration-none d-flex align-items-center"
+            >
+              <span class="me-2">Sign in</span>
+              <img
+                src="icons/enter-svgrepo-com.svg"
+                alt=""
+                class="img-fluid"
+                width="20"
+                height="20"
+              />
+            </a>
+          </div>
+
+          <!-- Mobile search form -->
+          <div class="collapse w-100 d-lg-none" id="mobileSearch">
+            <form class="mt-3">
+              <div class="input-group">
+                <input
+                  class="form-control rounded-pill border-0"
+                  type="search"
+                  placeholder="I'm looking for..."
+                  aria-label="Search"
+                />
+                <button
+                  class="btn btn-link text-decoration-none position-absolute end-0"
+                  type="submit"
+                >
+                  <img
+                    src="icons/search-4-svgrepo-com.svg"
+                    alt=""
+                    class="img-fluid"
+                    width="20"
+                    height="20"
+                  />
+                </button>
+              </div>
+            </form>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <section id="hero-loop">
+      <div class="swiper swiperI mySwiper heroSwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide  hero-swiper"><img src="movie_img/the-devil-wears-prada-movie-poster.webp" alt="" width="413" height="329" class="rounded-4"></div>
+          <div class="swiper-slide hero-swiper"><img src="movie_img/the-sound-of-music-movie-poster.webp" alt="" width="413" height="329" class="rounded-4"></div>
+          <div class="swiper-slide hero-swiper"><img src="movie_img/no-country-for-old-men-movie-poster.webp" alt="" width="413" height="329" class="rounded-4"></div>
+          <div class="swiper-slide hero-swiper"><img src="movie_img/pulp-fiction-movie-poster.webp" alt="" width="413" height="329" class="rounded-4"></div>
+          <div class="swiper-slide hero-swiper"><img src="movie_img/groundhog-day-movie-poster.webp" alt="" width="413" height="329" class="rounded-4"></div>
+          <div class="swiper-slide hero-swiper"><img src="movie_img/hereditary-movie-poster.webp" alt="" width="413" height="329" class="rounded-4"></div>
+          <div class="swiper-slide hero-swiper"><img src="movie_img/heretic-movie-poster.webp" alt="" width="413" height="329" class="rounded-4"></div>
+          <div class="swiper-slide hero-swiper"><img src="movie_img/fifty-shades-of-grey-movie-poster.webp" alt="" width="413" height="329" class="rounded-4"></div>
+          <div class="swiper-slide hero-swiper"><img src="movie_img/quantum-of-solace-movie-poster.webp" alt="" width="413" height="329" class="rounded-4"></div>
+          <div class="swiper-slide hero-swiper"><img src="movie_img/the-dark-knight-movie-poster.webp" alt="" width="413" height="329" class="rounded-4"></div>
+          <div class="swiper-slide hero-swiper"><img src="movie_img/the-godfather-movie-poster.jpg" alt="" width="413" height="329" class="rounded-4"></div>
+          <div class="swiper-slide hero-swiper"><img src="movie_img/the-notebook-movie-poster.webp" alt="" width="413" height="329" class="rounded-4"></div>
+          <div class="swiper-slide hero-swiper"><img src="movie_img/spectre-theatrical-movie-poster.webp" alt="" width="413" height="329" class="rounded-4"></div>
+          <div class="swiper-slide hero-swiper"><img src="movie_img/the-shawshank-redemption-movie-poster.webp" alt="" width="413" height="329" class="rounded-4"></div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
+
+    <section class="catalogue mb-5">
+      <div class="container">
+        <div class="row bg-muted p-3">
+          <div class="col-12">
+            <div class="nav-catalogue catalogue-nav rounded-3 p-2">
+              <div
+              class="mb-auto d-flex flex-column flex-md-row align-items-center justify-content-between gap-2"
+              >
+                <div class="d-flex gap-1 w-md-auto">
+                  <select
+                    class="form-select flex-grow-1 flex-md-grow-0 p-1"
+                    name="genre"
+                    id="genres"
+                  >
+                    <option selected>All Genres</option>
+                    <option value="">Drama</option>
+                    <option value="">Thriller</option>
+                    <option value="">Horror</option>
+                    <option value="">Independent</option>
+                    <option value="">Family</option>
+                    <option value="">Comedy</option>
+                    <option value="">Kids</option>
+                    <option value="">Science</option>
+                    <option value="">Biography</option>
+                    <option value="">Science Fiction</option>
+                    <option value="">Documentary</option>
+                    <option value="">Musical</option>
+                    <option value="">Indie</option>
+                    <option value="">Western</option>
+                    <option value="">Fantasy</option>
+                    <option value="">Action</option>
+                    <option value="">Romance</option>
+                    <option value="">Politics</option>
+                    <option value="">Mystery</option>
+                    <option value="">Crime</option>
+                    <option value="">War</option>
+                    <option value="">Animation</option>
+                    <option value="">Educational</option>
+                    <option value="">Religious</option>
+                    <option value="">Dystopian</option>
+                    <option value="">Comic Book</option>
+                    <option value="">Historical</option>
+                    <option value="">Dance</option>
+                    <option value="">Martial Arts</option>
+                    <option value="">Adventure</option>
+                    <option value="">Sports</option>
+                    <option value="">Spy</option>
+                    <option value="">Legal</option>
+                  </select>
+
+                  <select
+                  class="form-select flex-grow-1 flex-md-grow-0 p-1 w-xl-100"
+                    name="years"
+                    id="byYear"
+                  >
+                    <option value="">By Year</option>
+                    <option value="">'60s - '70s</option>
+                    <option value="">'80s - '90s</option>
+                    <option value="">2000-2010</option>
+                    <option value="">2010-2020</option>
+                    <option value="">2021-present</option>
+                  </select>
+                </div>
+
+                <div class="btn-group btn-category rounded-5 py-2 px-3" role="group" aria-label="tab-category-toggle">
+                  <button
+                  type="button" class="btn btn-tabs active" id="featured" data-bs-toggle="tab" href="#featured" name="grade"
+                  >Featured
+                </button>
+                  
+                  <button
+                    type="button"
+                    class="btn btn-tabs" data-bs-toggle="tab" href="#popular"
+                    name="grade"
+                  >Popular</button>
+                  
+                  <button
+                    type="button"
+                    class="btn btn-tabs" data-bs-toggle="tab" href="#newest"
+                    name="grade"
+                  >Newest</button>
+                </div>
+
+                <!-- <div class="tab-content">
+                  <div class="tab-pane fade show active" id="featured">
+                    <h5>Featured Movies</h5>
+                  </div>
+                  
+                  <div class="tab-pane fade" id="popular">
+                    <h5>Popular Movies</h5>
+                  </div>
+                  
+                  <div class="tab-pane fade" id="newest">
+                    <h5>Newest Movies</h5>
+                  </div>                 
+                </div> -->
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row gx-3 gy-5">
+          <div
+            class="col-6 col-sm-4 col-md-3 col-lg-2 d-flex align-items-start flex-column"
+          >
+            <div
+              class="custom-card position-relative d-flex align-items-center justify-content-center"
+            >
+              <a href="#" class="d-block position-relative">
+                <img
+                  src="movie_img/glory-movie-poster.webp"
+                  class="card-img-top img-fluid rounded-3 mb-2"
+                  alt="Movie Poster"
+                  style="
+                    height: 270px;
+                    object-fit: cover;
+                    object-position: top;
+                    width: 192px;
+                  "
+                />
+                <img
+                  src="icons/play-circle-svgrepo-com.svg"
+                  class="play-button position-absolute top-50 start-50 translate-middle"
+                  alt="Play Button"
+                  width="60"
+                  height="60"
+                />
+              </a>
+            </div>
+            <div
+              class="card-body card__title text-truncate"
+              style="max-width: 100%"
+            >
+              <h5
+                class="card__title text-truncate w-100 d-inline-block text-decoration-none"
+                style="max-width: 100%"
+              >
+                <a
+                  href="details.html"
+                  class="text-truncate text-white w-100 d-inline-block text-decoration-none"
+                  >The Shawshank Redemption</a
+                >
+              </h5>
+            </div>
+          </div>
+
+          <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+            <div
+              class="custom-card position-relative d-flex align-items-center justify-content-center"
+            >
+              <a href="#" class="d-block position-relative">
+                <img
+                  src="movie_img/blackkklansman-movie-poster.webp"
+                  class="img-fluid rounded-3 mb-2"
+                  alt="Blackkklansman"
+                  style="
+                    height: 270px;
+                    object-fit: cover;
+                    object-position: top;
+                    width: 192px;
+                  "
+                />
+                <img
+                  src="icons/play-circle-svgrepo-com.svg"
+                  class="play-button position-absolute top-50 start-50 translate-middle"
+                  alt="Play Button"
+                  width="60"
+                  height="60"
+                />
+              </a>
+            </div>
+            <div class="card-body">
+              <h5 class="card__title text-truncate" style="max-width: 100%">
+                <a
+                  href="details.html"
+                  class="text-truncate text-white w-100 d-inline-block text-decoration-none"
+                  >Blackkklansman</a
+                >
+              </h5>
+            </div>
+            <ul class="card-subtitle d-flex gap-2 list-unstyled">
+              <li class="text-white description">Free</li>
+              <li class="text-white description">Action</li>
+              <li class="text-white description">2019</li>
+            </ul>
+          </div>
+
+          <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+            <div
+              class="custom-card position-relative d-flex align-items-center justify-content-center"
+            >
+              <a href="details.html" class="d-block position-relative">
+                <img
+                  src="movie_img/good-will-hunting-movie-poster.webp"
+                  class="img-fluid rounded-3 mb-2"
+                  alt="Good Will Hunting"
+                  style="
+                    height: 270px;
+                    object-fit: cover;
+                    object-position: top;
+                    width: 192px;
+                  "
+                />
+                <img
+                  src="icons/play-circle-svgrepo-com.svg"
+                  class="play-button position-absolute top-50 start-50 translate-middle"
+                  alt="Play Button"
+                  width="60"
+                  height="60"
+                />
+              </a>
+            </div>
+
+            <div class="card-body">
+              <h5 class="card__title text-truncate" style="max-width: 100%">
+                <a
+                  href="details.html"
+                  class="text-truncate text-white w-100 d-inline-block text-decoration-none"
+                  >Good Will Hunting</a
+                >
+              </h5>
+            </div>
+            <ul class="card-subtitle d-flex gap-2 list-unstyled">
+              <li class="text-white description">Free</li>
+              <li class="text-white description">Drama</li>
+              <li class="text-white description">1997</li>
+            </ul>
+          </div>
+
+          <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+            <div
+              class="custom-card position-relative d-flex align-items-center justify-content-center"
+            >
+              <a href="details.html" class="d-block position-relative">
+                <img
+                  src="movie_img/casino-royale-british-movie-poster.webp"
+                  class="img-fluid rounded-3 mb-2"
+                  alt="Casino Royale"
+                  style="
+                    height: 270px;
+                    object-fit: cover;
+                    object-position: top;
+                    width: 192px;
+                  "
+                />
+                <img
+                  src="icons/play-circle-svgrepo-com.svg"
+                  class="play-button position-absolute top-50 start-50 translate-middle"
+                  alt="Play Button"
+                  width="60"
+                  height="60"
+                />
+              </a>
+            </div>
+
+            <h5 class="card__title text-truncate" style="max-width: 100%">
+              <a
+                href="details.html"
+                class="text-truncate text-white w-100 d-inline-block text-decoration-none"
+                >Casino Royale</a
+              >
+            </h5>
+            <ul class="card-subtitle d-flex gap-2 list-unstyled">
+              <li class="text-white description">Free</li>
+              <li class="text-white description">Action</li>
+              <li class="text-white description">2006</li>
+            </ul>
+          </div>
+
+          <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+            <div
+              class="custom-card position-relative d-flex align-items-center justify-content-center"
+            >
+              <a href="details.html" class="d-block position-relative">
+                <img
+                  src="movie_img/spirit-stallion-of-the-cimarron-movie-poster.webp"
+                  class="img-fluid rounded-3 mb-2"
+                  alt="Casino Royale"
+                  style="
+                    height: 270px;
+                    object-fit: cover;
+                    object-position: top;
+                    width: 192px;
+                  "
+                />
+                <img
+                  src="icons/play-circle-svgrepo-com.svg"
+                  class="play-button position-absolute top-50 start-50 translate-middle"
+                  alt="Play Button"
+                  width="60"
+                  height="60"
+                />
+              </a>
+            </div>
+
+            <h5 class="card__title text-truncate" style="max-width: 100%">
+              <a
+                href="details.html"
+                class="text-truncate text-white w-100 d-inline-block text-decoration-none"
+                >Spirit Stallion of The Cimarron</a
+              >
+            </h5>
+            <ul class="card-subtitle d-flex gap-2 list-unstyled">
+              <li class="text-white description">Free</li>
+              <li class="text-white description">Action</li>
+              <li class="text-white description">2006</li>
+            </ul>
+          </div>
+
+          <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+            <div
+              class="custom-card position-relative d-flex align-items-center justify-content-center"
+            >
+              <a href="details.html" class="d-block position-relative">
+                <img
+                  src="movie_img/500-days-of-summer-movie-poster.jpg"
+                  class="img-fluid rounded-3 mb-2"
+                  alt="Casino Royale"
+                  style="
+                    height: 270px;
+                    object-fit: cover;
+                    object-position: top;
+                    width: 192px;
+                  "
+                />
+                <img
+                  src="icons/play-circle-svgrepo-com.svg"
+                  class="play-button position-absolute top-50 start-50 translate-middle"
+                  alt="Play Button"
+                  width="60"
+                  height="60"
+                />
+              </a>
+            </div>
+
+            <h5 class="card__title text-truncate" style="max-width: 100%">
+              <a
+                href="details.html"
+                class="text-truncate text-white w-100 d-inline-block text-decoration-none"
+                >500 Days of Summer</a
+              >
+            </h5>
+            <ul class="card-subtitle d-flex gap-2 list-unstyled">
+              <li class="text-white description">Free</li>
+              <li class="text-white description">Action</li>
+              <li class="text-white description">2006</li>
+            </ul>
+          </div>
+
+          <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+            <div
+              class="custom-card position-relative d-flex align-items-center justify-content-center"
+            >
+              <a href="details.html" class="d-block position-relative">
+                <img
+                  src="movie_img/gifted-movie-poster.webp"
+                  class="img-fluid rounded-3 mb-2"
+                  alt="Casino Royale"
+                  style="
+                    height: 270px;
+                    object-fit: cover;
+                    object-position: top;
+                    width: 192px;
+                  "
+                />
+                <img
+                  src="icons/play-circle-svgrepo-com.svg"
+                  class="play-button position-absolute top-50 start-50 translate-middle"
+                  alt="Play Button"
+                  width="60"
+                  height="60"
+                />
+              </a>
+            </div>
+
+            <h5 class="card__title text-truncate mb-0" style="max-width: 100%">
+              <a
+                href="details.html"
+                class="text-truncate text-white w-100 d-inline-block text-decoration-none"
+                >Gifted</a
+              >
+            </h5>
+            <ul class="card-subtitle d-flex gap-2 list-unstyled">
+              <li class="text-white description">Free</li>
+              <li class="text-white description">Action</li>
+              <li class="text-white description">2006</li>
+            </ul>
+          </div>
+
+          <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+            <div
+              class="custom-card position-relative d-flex align-items-center justify-content-center"
+            >
+              <a href="details.html" class="d-block position-relative">
+                <img
+                  src="movie_img/fences-movie-poster.webp"
+                  class="img-fluid rounded-3 mb-2"
+                  alt="Fences"
+                  style="
+                    height: 270px;
+                    object-fit: cover;
+                    object-position: top;
+                    width: 192px;
+                  "
+                />
+                <img
+                  src="icons/play-circle-svgrepo-com.svg"
+                  class="play-button position-absolute top-50 start-50 translate-middle"
+                  alt="Play Button"
+                  width="60"
+                  height="60"
+                />
+              </a>
+            </div>
+            <h5 class="card__title text-truncate mb-0" style="max-width: 100%">
+              <a
+                href="details.html"
+                class="text-truncate text-white w-100 d-inline-block text-decoration-none"
+                >Fences</a
+              >
+            </h5>
+            <ul class="card-subtitle d-flex gap-2 list-unstyled">
+              <li class="text-white description">Free</li>
+              <li class="text-white description">Action</li>
+              <li class="text-white description">2006</li>
+            </ul>
+          </div>
+
+          <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+            <div
+              class="custom-card position-relative d-flex align-items-center justify-content-center"
+            >
+              <a href="details.html" class="d-block position-relative">
+                <img
+                  src="movie_img/interstellar-movie-poster.webp"
+                  class="img-fluid rounded-3 mb-2"
+                  alt="Intersteller"
+                  style="
+                    height: 270px;
+                    object-fit: cover;
+                    object-position: top;
+                    width: 192px;
+                  "
+                />
+                <img
+                  src="icons/play-circle-svgrepo-com.svg"
+                  class="play-button position-absolute top-50 start-50 translate-middle"
+                  alt="Play Button"
+                  width="60"
+                  height="60"
+                />
+              </a>
+            </div>
+
+            <h5 class="card__title text-truncate mb-0" style="max-width: 100%">
+              <a
+                href="details.html"
+                class="text-truncate text-white w-100 d-inline-block text-decoration-none"
+                >Intersteller</a
+              >
+            </h5>
+            <ul class="card-subtitle d-flex gap-2 list-unstyled">
+              <li class="text-white description">Free</li>
+              <li class="text-white description">Action</li>
+              <li class="text-white description">2006</li>
+            </ul>
+          </div>
+
+          <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+            <div
+              class="custom-card position-relative d-flex align-items-center justify-content-center"
+            >
+              <a href="details.html" class="d-block position-relative">
+                <img
+                  src="movie_img/in-time-movie-poster.webp"
+                  class="img-fluid rounded-3 mb-2"
+                  alt="In Time"
+                  style="
+                    height: 270px;
+                    object-fit: cover;
+                    object-position: top;
+                    width: 192px;
+                  "
+                />
+                <img
+                  src="icons/play-circle-svgrepo-com.svg"
+                  class="play-button position-absolute top-50 start-50 translate-middle"
+                  alt="Play Button"
+                  width="60"
+                  height="60"
+                />
+              </a>
+            </div>
+
+            <h5 class="card__title text-truncate mb-0" style="max-width: 100%">
+              <a
+                href="details.html"
+                class="text-truncate text-white w-100 d-inline-block text-decoration-none"
+                >In Time</a
+              >
+            </h5>
+            <ul class="card-subtitle d-flex gap-2 list-unstyled">
+              <li class="text-white description">Free</li>
+              <li class="text-white description">Action</li>
+              <li class="text-white description">2006</li>
+            </ul>
+          </div>
+
+          <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+            <div
+              class="custom-card position-relative d-flex align-items-center justify-content-center"
+            >
+              <a href="details.html" class="d-block position-relative">
+                <img
+                  src="movie_img/heretic-movie-poster.webp"
+                  class="img-fluid rounded-3 mb-2"
+                  alt="Casino Royale"
+                  style="
+                    height: 270px;
+                    object-fit: cover;
+                    object-position: top;
+                    width: 192px;
+                  "
+                />
+                <img
+                  src="icons/play-circle-svgrepo-com.svg"
+                  class="play-button position-absolute top-50 start-50 translate-middle"
+                  alt="Play Button"
+                  width="60"
+                  height="60"
+                />
+              </a>
+            </div>
+
+            <h5 class="card__title text-truncate mb-0" style="max-width: 100%">
+              <a
+                href="details.html"
+                class="text-truncate text-white w-100 d-inline-block text-decoration-none"
+                >Heretic</a
+              >
+            </h5>
+            <ul class="card-subtitle d-flex gap-2 list-unstyled">
+              <li class="text-white description">Free</li>
+              <li class="text-white description">Action</li>
+              <li class="text-white description">2006</li>
+            </ul>
+          </div>
+
+          <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+            <div
+              class="custom-card position-relative d-flex align-items-center justify-content-center"
+            >
+              <a href="details.html" class="d-block position-relative">
+                <img
+                  src="movie_img/apocalypse-now-movie-poster.webp"
+                  class="img-fluid rounded-3 mb-2"
+                  alt="Casino Royale"
+                  style="
+                    height: 270px;
+                    object-fit: cover;
+                    object-position: top;
+                    width: 192px;
+                  "
+                />
+                <img
+                  src="icons/play-circle-svgrepo-com.svg"
+                  class="play-button position-absolute top-50 start-50 translate-middle"
+                  alt="Play Button"
+                  width="60"
+                  height="60"
+                />
+              </a>
+            </div>
+
+            <h5 class="card__title text-truncate mb-0" style="max-width: 100%">
+              <a
+                href="details.html"
+                class="text-truncate text-white w-100 d-inline-block text-decoration-none"
+                >Apocalyse Now</a
+              >
+            </h5>
+            <ul class="card-subtitle d-flex gap-2 list-unstyled">
+              <li class="text-white description">Free</li>
+              <li class="text-white description">Action</li>
+              <li class="text-white description">2006</li>
+            </ul>
+          </div>
+
+          <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+            <div
+              class="custom-card position-relative d-flex align-items-center justify-content-center"
+            >
+              <a href="details.html" class="d-block position-relative">
+                <img
+                  src="movie_img/there-will-be-blood-movie-poster.webp"
+                  class="img-fluid rounded-3 mb-2"
+                  alt="Casino Royale"
+                  style="
+                    height: 270px;
+                    object-fit: cover;
+                    object-position: top;
+                    width: 192px;
+                  "
+                />
+                <img
+                  src="icons/play-circle-svgrepo-com.svg"
+                  class="play-button position-absolute top-50 start-50 translate-middle"
+                  alt="Play Button"
+                  width="60"
+                  height="60"
+                />
+              </a>
+            </div>
+
+            <h5 class="card__title text-truncate mb-0" style="max-width: 100%">
+              <a
+                href="details.html"
+                class="text-truncate text-white w-100 d-inline-block text-decoration-none"
+              >
+                There Will Be Blood</a
+              >
+            </h5>
+            <ul class="card-subtitle d-flex gap-2 list-unstyled">
+              <li class="text-white description">Free</li>
+              <li class="text-white description">Action</li>
+              <li class="text-white description">2006</li>
+            </ul>
+          </div>
+
+          <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+            <div
+              class="custom-card position-relative d-flex align-items-center justify-content-center"
+            >
+              <a href="details.html" class="d-block position-relative">
+                <img
+                  src="movie_img/fifty-shades-darker-movie-poster.webp"
+                  class="img-fluid rounded-3 mb-2"
+                  alt="Casino Royale"
+                  style="
+                    height: 270px;
+                    object-fit: cover;
+                    object-position: top;
+                    width: 192px;
+                  "
+                />
+                <img
+                  src="icons/play-circle-svgrepo-com.svg"
+                  class="play-button position-absolute top-50 start-50 translate-middle"
+                  alt="Play Button"
+                  width="60"
+                  height="60"
+                />
+              </a>
+            </div>
+
+            <h5 class="card__title text-truncate mb-0" style="max-width: 100%">
+              <a
+                href="details.html"
+                class="text-truncate text-white w-100 d-inline-block text-decoration-none"
+                >Fifty Shades Darker</a
+              >
+            </h5>
+            <ul class="card-subtitle d-flex gap-2 list-unstyled">
+              <li class="text-white description">Free</li>
+              <li class="text-white description">Action</li>
+              <li class="text-white description">2006</li>
+            </ul>
+          </div>
+
+          <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+            <div
+              class="custom-card position-relative d-flex align-items-center justify-content-center"
+            >
+              <a href="details.html" class="d-block position-relative">
+                <img
+                  src="movie_img/skyfall-movie-poster.webp"
+                  class="img-fluid rounded-3 mb-2"
+                  alt="Casino Royale"
+                  style="
+                    height: 270px;
+                    object-fit: cover;
+                    object-position: top;
+                    width: 192px;
+                  "
+                />
+                <img
+                  src="icons/play-circle-svgrepo-com.svg"
+                  class="play-button position-absolute top-50 start-50 translate-middle"
+                  alt="Play Button"
+                  width="60"
+                  height="60"
+                />
+              </a>
+            </div>
+
+            <h5 class="card__title text-truncate mb-0" style="max-width: 100%">
+              <a
+                href="details.html"
+                class="text-truncate text-white w-100 d-inline-block text-decoration-none"
+                >Skyfall</a
+              >
+            </h5>
+            <ul class="card-subtitle d-flex gap-2 list-unstyled">
+              <li class="text-white description">Free</li>
+              <li class="text-white description">Action</li>
+              <li class="text-white description">2006</li>
+            </ul>
+          </div>
+
+          <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+            <div
+              class="custom-card position-relative d-flex align-items-center justify-content-center"
+            >
+              <a href="details.html" class="d-block position-relative">
+                <img
+                  src="movie_img/training-day-movie-poster.webp"
+                  class="img-fluid rounded-3 mb-2"
+                  alt="Casino Royale"
+                  style="
+                    height: 270px;
+                    object-fit: cover;
+                    object-position: top;
+                    width: 192px;
+                  "
+                />
+                <img
+                  src="icons/play-circle-svgrepo-com.svg"
+                  class="play-button position-absolute top-50 start-50 translate-middle"
+                  alt="Play Button"
+                  width="60"
+                  height="60"
+                />
+              </a>
+            </div>
+
+            <h5 class="card__title text-truncate mb-0" style="max-width: 100%">
+              <a
+                href="details.html"
+                class="text-truncate text-white w-100 d-inline-block text-decoration-none"
+                >Training Day</a
+              >
+            </h5>
+            <ul class="card-subtitle d-flex gap-2 list-unstyled">
+              <li class="text-white description">Free</li>
+              <li class="text-white description">Action</li>
+              <li class="text-white description">2006</li>
+            </ul>
+          </div>
+
+          <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+            <div
+              class="custom-card position-relative d-flex align-items-center justify-content-center"
+            >
+              <a href="details.html" class="d-block position-relative">
+                <img
+                  src="movie_img/me-before-you-movie-poster.webp"
+                  class="img-fluid rounded-3 mb-2"
+                  alt="Casino Royale"
+                  style="
+                    height: 270px;
+                    object-fit: cover;
+                    object-position: top;
+                    width: 192px;
+                  "
+                />
+                <img
+                  src="icons/play-circle-svgrepo-com.svg"
+                  class="play-button position-absolute top-50 start-50 translate-middle"
+                  alt="Play Button"
+                  width="60"
+                  height="60"
+                />
+              </a>
+            </div>
+
+            <h5 class="card__title text-truncate mb-0" style="max-width: 100%">
+              <a
+                href="details.html"
+                class="text-truncate text-white w-100 d-inline-block text-decoration-none"
+                >Me Before You</a
+              >
+            </h5>
+            <ul class="card-subtitle d-flex gap-2 list-unstyled">
+              <li class="text-white description">Free</li>
+              <li class="text-white description">Action</li>
+              <li class="text-white description">2006</li>
+            </ul>
+          </div>
+
+          <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+            <div
+              class="custom-card position-relative d-flex align-items-center justify-content-center"
+            >
+              <a href="details.html" class="d-block position-relative">
+                <img
+                  src="movie_img/the-pianist-movie-poster.webp"
+                  class="img-fluid rounded-3 mb-2"
+                  alt="Casino Royale"
+                  style="
+                    height: 270px;
+                    object-fit: cover;
+                    object-position: top;
+                    width: 192px;
+                  "
+                />
+                <img
+                  src="icons/play-circle-svgrepo-com.svg"
+                  class="play-button position-absolute top-50 start-50 translate-middle"
+                  alt="Play Button"
+                  width="60"
+                  height="60"
+                />
+              </a>
+            </div>
+
+            <h5 class="card__title text-truncate mb-0" style="max-width: 100%">
+              <a
+                href="details.html"
+                class="text-truncate text-white w-100 d-inline-block text-decoration-none"
+                >The Pianist</a
+              >
+            </h5>
+            <ul class="card-subtitle d-flex gap-2 list-unstyled">
+              <li class="text-white description">Free</li>
+              <li class="text-white description">Action</li>
+              <li class="text-white description">2006</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-12 text-center">
+            <button
+              class="btn load-more-btn text-center py-3 px-5 rounded-4 mt-5 text-white"
+            >
+              LOAD MORE
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="subscriptions" class="py-5 px-0">
+      <div class="container position-relative">
+        <div class="row">
+          <div class="col-12">
+            <h2 class="text-white">Subscriptions</h2>
+          </div>
+        </div>
+
+        <div class="swiper swiperII mySwiper ">
+          <div class="swiper-button-prev   translate-middle-y ms-0" style="left:-20;"></div>
+          <div class="swiper-button-next  translate-middle-y me-0" style="right:-20;"></div>
+          <div class="swiper-wrapper">
+            <div class="swiper-slide sub-swiper position-relative">
+              <div class="position-absolute h-100 w-100 bg-muted"></div>
+              <img
+                src="utility-imgs/sports-coverage.jpg"
+                alt=""
+                class="rounded-3 sub-img"
+                width="192"
+                height="270"
+              />
+            </div>
+            <div class="swiper-slide sub-swiper">
+              <img
+                src="utility-imgs/musical.jpg"
+                alt=""
+                class="rounded-3 sub-img"
+                width="192"
+                height="270"
+              />
+            </div>
+            <div class="swiper-slide sub-swiper">
+              <img
+                src="utility-imgs/legal.jpg"
+                alt=""
+                class="rounded-3 sub-img"
+                width="192"
+                height="270"
+              />
+            </div>
+            <div class="swiper-slide sub-swiper">
+              <img
+                src="utility-imgs/space.jpg"
+                alt=""
+                class="rounded-3 sub-img"
+                width="192"
+                height="270"
+              />
+            </div>
+            <div class="swiper-slide sub-swiper">
+              <img
+                src="utility-imgs/psychological.jpg"
+                alt=""
+                class="rounded-3 sub-img"
+                width="192"
+                height="270"
+              />
+            </div>
+            <div class="swiper-slide sub-swiper">
+              <img
+                src="utility-imgs/fantasy.jpg"
+                alt=""
+                class="rounded-3 sub-img"
+                width="192"
+                height="270"
+              />
+            </div>
+            <div class="swiper-slide sub-swiper">
+              <img
+                src="utility-imgs/medieval.jpg"
+                alt=""
+                class="rounded-3 sub-img"
+                width="192"
+                height="270"
+              />
+            </div>
+            <div class="swiper-slide sub-swiper">
+              <img
+                src="utility-imgs/dystopian.jpg"
+                alt=""
+                class="rounded-3 sub-img"
+                width="192"
+                height="270"
+              />
+            </div>
+            <div class="swiper-slide sub-swiper">
+              <img
+                src="utility-imgs/sci-fi.jpg"
+                alt=""
+                class="rounded-3 sub-img"
+                width="192"
+                height="270"
+              />
+            </div>
+            <div class="swiper-slide sub-swiper">
+              <img
+                src="utility-imgs/romance.jpg"
+                alt=""
+                class="rounded-3 sub-img"
+                width="192"
+                height="270"
+              />
+            </div>
+            <div class="swiper-slide sub-swiper">
+              <img
+                src="utility-imgs/horror.jpg"
+                alt=""
+                class="rounded-3 sub-img"
+                width="192"
+                height="270"
+              />
+            </div>
+            <div class="swiper-slide sub-swiper">
+              <img
+                src="utility-imgs/army.jpg"
+                alt=""
+                class="rounded-3 sub-img"
+                width="192"
+                height="270"
+              />
+            </div>
+          </div>
+          <!-- <div class="swiper-pagination"></div> -->
+        </div>
+      </div>
+    </section>
+
+    <section id="plan">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <h2 class="text-white">Select Your Plan</h2>
+            <p class="text-white">
+              No hidden fees, equipment rentals, or installation rentals
+            </p>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-12 col-md-6 col-xl-4">
+            <div class="plan-card p-4 rounded-4">
+              <h4 class="text-white mb-4 pb-4 regular-h4 fs-5">Regular</h4>
+              <ul class="list-unstyled">
+                <li class="text-white mb-3">
+                  <span
+                    ><img
+                      src="icons/check.svg"
+                      alt=""
+                      width="15"
+                      height="15"
+                      class="me-2" /></span
+                  >CMX-TV Originals
+                </li>
+                <li class="text-white mb-3">
+                  <span
+                    ><img
+                      src="icons/check.svg"
+                      alt=""
+                      width="15"
+                      height="15"
+                      class="me-2" /></span
+                  >Switch plans or cancel anytime
+                </li>
+                <li class="text-white mb-3">
+                  <span
+                    ><img
+                      src="icons/close-bold.svg"
+                      alt=""
+                      width="15"
+                      height="15"
+                      class="me-2" /></span
+                  >Stream 65+ top Live
+                </li>
+                <li class="text-white">
+                  <span
+                    ><img
+                      src="icons/close-bold.svg"
+                      alt=""
+                      width="15"
+                      height="15"
+                      class="me-2"
+                  /></span>
+                  TV channels
+                </li>
+              </ul>
+
+              <p class="text-white fw-semibold mt-4 pt-4 plan-price">
+                <span class="display-5 fw-semibold">$11.99</span>/month
+              </p>
+              <button
+                class="btn btn-select text-white text-center mt-4 py-3 px-5 w-100"
+              >
+                SELECT PLAN
+              </button>
+            </div>
+          </div>
+
+          <div class="col-12 col-xl-4">
+            <div class="plan-card-2 p-4 rounded-4">
+              <h4 class="text-white mb-4 pb-4 regular-h4 fs-5">Premium</h4>
+              <ul class="list-unstyled">
+                <li class="text-white mb-3">
+                  <span
+                    ><img
+                      src="icons/check.svg"
+                      alt=""
+                      width="15"
+                      height="15"
+                      class="me-2" /></span
+                  >CMX-TV Originals
+                </li>
+                <li class="text-white mb-3">
+                  <span
+                    ><img
+                      src="icons/check.svg"
+                      alt=""
+                      width="15"
+                      height="15"
+                      class="me-2" /></span
+                  >Switch plans or cancel anytime
+                </li>
+                <li class="text-white mb-3">
+                  <span
+                    ><img
+                      src="icons/check.svg"
+                      alt=""
+                      width="15"
+                      height="15"
+                      class="me-2" /></span
+                  >Stream 65+ top Live
+                </li>
+                <li class="text-white">
+                  <span
+                    ><img
+                      src="icons/close-bold.svg"
+                      alt=""
+                      width="15"
+                      height="15"
+                      class="me-2"
+                  /></span>
+                  TV channels
+                </li>
+              </ul>
+
+              <p class="text-white fw-semibold mt-4 pt-4 plan-price">
+                <span class="display-5 fw-semibold">$34.99</span>/month
+              </p>
+              <button
+                class="btn btn-select text-white text-center mt-4 py-3 px-5 w-100"
+              >
+                SELECT PLAN
+              </button>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6 col-xl-4">
+            <div class="plan-card p-4 rounded-4">
+              <h4 class="text-white mb-4 pb-4 regular-h4 fs-5">
+                Premium + TV channels
+              </h4>
+              <ul class="list-unstyled">
+                <li class="text-white mb-3">
+                  <span
+                    ><img
+                      src="icons/check.svg"
+                      alt=""
+                      width="15"
+                      height="15"
+                      class="me-2" /></span
+                  >CMX-TV Originals
+                </li>
+                <li class="text-white mb-3">
+                  <span
+                    ><img
+                      src="icons/check.svg"
+                      alt=""
+                      width="15"
+                      height="15"
+                      class="me-2" /></span
+                  >Switch plans or cancel anytime
+                </li>
+                <li class="text-white mb-3">
+                  <span
+                    ><img
+                      src="icons/check.svg"
+                      alt=""
+                      width="15"
+                      height="15"
+                      class="me-2" /></span
+                  >Stream 65+ top Live
+                </li>
+                <li class="text-white">
+                  <span
+                    ><img
+                      src="icons/check.svg"
+                      alt=""
+                      width="15"
+                      height="15"
+                      class="me-2"
+                  /></span>
+                  TV channels
+                </li>
+              </ul>
+
+              <p class="text-white fw-semibold mt-4 pt-4 plan-price">
+                <span class="display-5 fw-semibold">$49.99</span>/month
+              </p>
+              <button
+                class="btn btn-select text-white text-center mt-4 py-3 px-5 w-100"
+              >
+                SELECT PLAN
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="segment">
+      <div class="container">
+        <div class="swiper swiperIII mySwiper segmentSwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide  seg-swiper"><img src="movie_img/the-devil-wears-prada-movie-poster.webp" alt="" width="413" height="329" class="rounded-4"></div>
+            <div class="swiper-slide seg-swiper"><img src="movie_img/the-sound-of-music-movie-poster.webp" alt="" width="413" height="329" class="rounded-4"></div>
+            <div class="swiper-slide seg-swiper"><img src="movie_img/no-country-for-old-men-movie-poster.webp" alt="" width="413" height="329" class="rounded-4"></div>
+            <div class="swiper-slide seg-swiper"><img src="movie_img/pulp-fiction-movie-poster.webp" alt="" width="413" height="329" class="rounded-4"></div>
+            <div class="swiper-slide seg-swiper"><img src="movie_img/groundhog-day-movie-poster.webp" alt="" width="413" height="329" class="rounded-4"></div>
+            <div class="swiper-slide seg-swiper"><img src="movie_img/hereditary-movie-poster.webp" alt="" width="413" height="329" class="rounded-4"></div>
+            <div class="swiper-slide seg-swiper"><img src="movie_img/heretic-movie-poster.webp" alt="" width="413" height="329" class="rounded-4"></div>
+            <div class="swiper-slide seg-swiper"><img src="movie_img/fifty-shades-of-grey-movie-poster.webp" alt="" width="413" height="329" class="rounded-4"></div>
+            <div class="swiper-slide seg-swiper"><img src="movie_img/quantum-of-solace-movie-poster.webp" alt="" width="413" height="329" class="rounded-4"></div>
+            <div class="swiper-slide seg-swiper"><img src="movie_img/the-dark-knight-movie-poster.webp" alt="" width="413" height="329" class="rounded-4"></div>
+            <div class="swiper-slide seg-swiper"><img src="movie_img/the-godfather-movie-poster.jpg" alt="" width="413" height="329" class="rounded-4"></div>
+            <div class="swiper-slide seg-swiper"><img src="movie_img/the-notebook-movie-poster.webp" alt="" width="413" height="329" class="rounded-4"></div>
+            <div class="swiper-slide seg-swiper"><img src="movie_img/spectre-theatrical-movie-poster.webp" alt="" width="413" height="329" class="rounded-4"></div>
+            <div class="swiper-slide seg-swiper"><img src="movie_img/the-shawshank-redemption-movie-poster.webp" alt="" width="413" height="329" class="rounded-4"></div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+  
+      </div>
+    </section>
+
+    <footer class="py-5">
+      <div class="container">
+        <div class="row">
+          <div
+            class="col-12 col-sm-8 col-md-6 col-lg-4 col-xl-3 order-4 order-md-1 order-lg-4 order-xl-1"
+          >
+            <a
+              href="#"
+              class="fw-bold text-decoration-none d-inline-block text-white fs-4"
+            >
+              Cine<span class="text-danger">Max</span>
+            </a>
+            <p class="text-white">
+              Movies & TV shows, Online cinema, Movie database
+            </p>
+          </div>
+
+          <div
+            class="col-6 col-md-4 col-lg-3 col-xl-2 order-1 order-md-2 order-lg-1 order-xl-2 offset-md-2 offset-lg-0 offset-xl-1"
+          >
+            <h6 class="text-white fw-medium mt-4 mb-2">CMX-TV</h6>
+            <div class="footer_nav">
+              <a
+                href="#"
+                class="text-white text-decoration-none d-block hover:text-danger mb-1 fs-6 lh-2"
+                >About Us
+              </a>
+              <a
+                href="#"
+                class="text-white text-decoration-none d-block hover:text-danger mb-1 fs-6 lh-2"
+                >My Profile</a
+              >
+              <a
+                href="#"
+                class="text-white text-decoration-none d-block hover:text-danger mb-1 fs-6 lh-2"
+                >Pricing Plans</a
+              >
+              <a
+                href="#"
+                class="text-white text-decoration-none d-block hover:text-danger mb-1 fs-6 lh-2"
+                >Contact</a
+              >
+            </div>
+          </div>
+
+          <div
+            class="col-12 col-md-8 col-lg-6 col-xl-4 order-3 order-lg-2 order-md-3 order-xl-3"
+          >
+            <h6 class="text-white fw-medium mt-4 mb-2">Browse</h6>
+            <div class="row">
+              <div class="col-6">
+                <div class="list-unstyled">
+                  <a
+                    href="#"
+                    class="text-white text-decoration-none d-block hover:text-danger mb-1 fs-6 lh-2"
+                    >Live TV</a
+                  >
+                  <a
+                    href="#"
+                    class="text-white text-decoration-none d-block hover:text-danger mb-1 fs-6 lh-2"
+                    >Live News</a
+                  >
+                  <a
+                    href="#"
+                    class="text-white text-decoration-none d-block hover:text-danger mb-1 fs-6 lh-2"
+                    >Live Sport</a
+                  >
+                  <a
+                    href="#"
+                    class="text-white text-decoration-none d-block hover:text-danger mb-1 fs-6 lh-2"
+                    >Steaming Library</a
+                  >
+                </div>
+              </div>
+              <div class="col-6">
+                <div>
+                  <a
+                    href="#"
+                    class="text-white text-decoration-none d-block hover:text-danger mb-1 fs-6 lh-2"
+                    >TV Shows</a
+                  >
+                  <a
+                    href="#"
+                    class="text-white text-decoration-none d-block hover:text-danger mb-1 fs-6 lh-2"
+                    >Movies</a
+                  >
+                  <a
+                    href="#"
+                    class="text-white text-decoration-none d-block hover:text-danger mb-1 fs-6 lh-2"
+                    >Kids</a
+                  >
+                  <a
+                    href="#"
+                    class="text-white text-decoration-none d-block hover:text-danger mb-1 fs-6 lh-2"
+                    >Collections</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="col-6 col-md-4 col-lg-3 col-xl-2 order-2 order-lg-3 order-md-4 order-xl-4"
+          >
+            <h6 class="text-white fw-medium mt-4 mb-2">Help</h6>
+            <div>
+              <a
+                href="#"
+                class="text-white text-decoration-none d-block hover:text-danger mb-1 fs-6 lh-2"
+                >Account & Billing</a
+              >
+              <a
+                href="#"
+                class="text-white text-decoration-none d-block hover:text-danger mb-1 fs-6 lh-2"
+                >Plans & Pricing</a
+              >
+              <a
+                href="#"
+                class="text-white text-decoration-none d-block hover:text-danger mb-1 fs-6 lh-2"
+                >Supported Devices</a
+              >
+              <a
+                href="#"
+                class="text-white text-decoration-none d-block hover:text-danger mb-1 fs-6 lh-2"
+                >Accessibility</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="row justify-contents-between align-items-center">
+          <div class="col-12">
+            <div><p>@ CineMax TV, Final Project by Ojiya Treasure</p></div>
+            <div class="base_link d-flex flex-row g-2">
+              <a href="">Privacy Policy</a>
+              <a href="">Terms and Conditions</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script type="module" src="src/scripts/index.js"></script>
+  </body>
+</html>

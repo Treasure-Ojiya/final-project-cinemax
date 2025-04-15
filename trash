@@ -1,0 +1,821 @@
+<header class="py-4">
+  <div class="container">
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid">
+        <button
+          class="navbar-toggler btn-toggle border-0"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <img src="icons/menu-alt-1-svgrepo-com.svg" alt="" />
+        </button>
+        <div
+          class="row d-flex justify-content-between align-items-center w-100"
+        >
+          <div class="col-2 d-flex justify-content-start">
+            <a class="navbar-brand" href="#"
+              >Cine<span class="text-danger">Max</span></a
+            >
+          </div>
+
+          <div class="col-6 text-center">
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul
+                class="navbar-nav mx-auto mb-2 mb-lg-0 d-flex justify-content-center gap-2"
+              >
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link active text-white d-inline-flex align-items-end gap-0 fs-6"
+                    href="#"
+                    id="navbarDropdownHome"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Home
+                    <img
+                      src="icons/dot-small-svgrepo-com.svg"
+                      alt=""
+                      width="20"
+                      height="20"
+                    />
+                  </a>
+                  <ul
+                    class="dropdown-menu"
+                    aria-labelledby="navbarDropdownHome"
+                  >
+                    <li>
+                      <a class="dropdown-item" href="#">Home Style 1</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Home Style 2</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Home Style 3</a>
+                    </li>
+                  </ul>
+                </li>
+
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link text-white d-inline-flex align-items-end gap-0"
+                    href="#"
+                    id="navbarDropdownCatalogue"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Catalogue
+                    <img
+                      src="icons/dot-small-svgrepo-com.svg"
+                      alt=""
+                      width="20"
+                      height="20"
+                    />
+                  </a>
+                  <ul
+                    class="dropdown-menu"
+                    aria-labelledby="navbarDropdownCatalogue"
+                  >
+                    <li><a class="dropdown-item" href="#">Catalogue</a></li>
+                    <li class="dropdown-submenu">
+                      <a
+                        class="dropdown-item nested-list d-inline-flex align-items-center"
+                        href="#"
+                        id="nestedgenres"
+                        role="button"
+                      >
+                        Catalogue dropdown
+                        <img
+                          src="icons/dot-svgrepo-com-primary.svg"
+                          alt=""
+                          width="40"
+                          height="40"
+                        />
+                      </a>
+                      <ul
+                        class="dropdown-menu dropdown-menu-end"
+                        aria-labelledby="nestedgenres"
+                      >
+                        <li>
+                          <a class="dropdown-item" href="#">Action</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#">Biography</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#">Documentary</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#">Horror</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#">Romance</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#">Musical</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Category Style 1</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Category Style 2</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Details Style 1</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Details Style 2</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Details Style 3</a>
+                    </li>
+                  </ul>
+                </li>
+
+                <li class="nav-item">
+                  <a href="#" class="nav-link text-white">Pricing Plans</a>
+                </li>
+
+                <li class="nav-item">
+                  <a
+                    href="#"
+                    class="nav-link text-white d-inline-flex align-items-end gap-0"
+                  >
+                    Live
+                    <img
+                      src="icons/dot-svgrepo-com.svg"
+                      alt=""
+                      width="20"
+                      height="20"
+                    />
+                  </a>
+                </li>
+
+                <li class="nav-item">
+                  <a
+                    href="#"
+                    class="nav-link"
+                    id="navbarDropdownMore"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    <img
+                      src="icons/dot-menu-more-2-svgrepo-com.svg"
+                      alt=""
+                      width="20"
+                      height="20"
+                    />
+                  </a>
+                  <ul
+                    class="dropdown-menu overflow-auto"
+                    style="max-height: 200px"
+                    aria-labelledby="navbarDropdownMore"
+                  >
+                    <li><a class="dropdown-item" href="#">About us</a></li>
+                    <li><a class="dropdown-item" href="#">Profile</a></li>
+                    <li><a class="dropdown-item" href="#">Contacts</a></li>
+                    <li><a class="dropdown-item" href="#">Interview</a></li>
+                    <li>
+                      <a class="dropdown-item" href="#">Admin Pages</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Privacy policy</a>
+                    </li>
+                    <li><a class="dropdown-item" href="#">Sign in</a></li>
+                    <li><a class="dropdown-item" href="#">Sign up</a></li>
+                    <li>
+                      <a class="dropdown-item" href="#">Forgot password</a>
+                    </li>
+                    <li><a class="dropdown-item" href="#">404 page</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-4 d-flex justify-content-between">
+            <form class="d-flex me-3">
+              <div class="input-group">
+                <input
+                  class="form-control rounded-start-4 border-0"
+                  type="search"
+                  placeholder="I'm looking for..."
+                  aria-label="Search"
+                />
+                <span class="input-group-text bg-white rounded-end-4 border-0">
+                  <img
+                    src="icons/search-4-svgrepo-com.svg"
+                    alt=""
+                    width="20"
+                    height="20"
+                  />
+                </span>
+              </div>
+            </form>
+
+            <a href="#" class="text-white d-flex align-items-center">
+              Sign in
+              <img
+                src="icons/enter-svgrepo-com.svg"
+                alt=""
+                width="20"
+                height="20"
+              />
+            </a>
+          </div>
+        </div>
+        <button type="button" class="btn-close" disabled aria-label="Close">
+          <img src="icons/close-bold-svgrepo-com.svg" alt="" />
+        </button>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<!-- Search and Sign In (visible in menu on mobile) -->
+<!-- <div class="d-lg-none">
+                <form class="d-flex mb-3">
+                  <div class="input-group">
+                    <input
+                      class="form-control rounded-start-4 border-0"
+                      type="search"
+                      placeholder="I'm looking for..."
+                      aria-label="Search"
+                    />
+                    <span
+                      class="input-group-text bg-white rounded-end-4 border-0"
+                    >
+                      <img
+                        src="icons/search-4-svgrepo-com.svg"
+                        alt=""
+                        width="20"
+                        height="20"
+                      />
+                    </span>
+                  </div>
+                </form>
+
+                <a href="#" class="text-white d-flex align-items-center mb-2">
+                  Sign in
+                  <img
+                    src="icons/enter-svgrepo-com.svg"
+                    alt=""
+                    width="20"
+                    height="20"
+                  />
+                </a>
+              </div> -->
+
+<header class="py-4 bg-dark fixed-top">
+  <div class="container">
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <div class="container-fluid p-0 position-relative">
+        <!-- Menu button -->
+        <button
+          class="navbar-toggler btn-toggle border-0 me-2 position-absolute start-0"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+          id="menuToggle"
+        >
+          <img src="icons/menu-alt-1-svgrepo-com.svg" alt="" />
+        </button>
+
+        <!-- Logo -->
+        <a class="navbar-brand ms-5 ps-4" href="#">
+          Cine<span class="text-danger">Max</span>
+        </a>
+
+        <!-- Close button (hidden initially) -->
+        <button
+          type="button"
+          class="btn-close btn-close-white d-none position-absolute start-0"
+          aria-label="Close"
+          id="menuClose"
+        >
+          <img src="icons/close-bold-svgrepo-com.svg" alt="" />
+        </button>
+
+        <!-- Search and Sign In icons (mobile) -->
+        <div class="d-flex d-lg-none ms-auto">
+          <button class="btn border-0 me-2" id="searchToggleMobile">
+            <img
+              src="icons/search-4-svgrepo-com.svg"
+              alt="Search"
+              width="20"
+              height="20"
+            />
+          </button>
+          <a href="#" class="btn border-0">
+            <img
+              src="icons/enter-svgrepo-com.svg"
+              alt="Sign in"
+              width="20"
+              height="20"
+            />
+          </a>
+        </div>
+
+        <!-- Main navigation -->
+        <div
+          class="collapse navbar-collapse top-0 start-0 w-100 bg-dark mt-5 pt-3 d-lg-none"
+          id="navbarSupportedContent"
+          style="z-index: 1000; display: none"
+        >
+          <ul class="navbar-nav mb-3 px-3">
+            <!-- Your existing nav items here (copied exactly from your original) -->
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link active text-white d-inline-flex align-items-end gap-0 fs-6"
+                href="#"
+                id="navbarDropdownHome"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Home
+                <img
+                  src="icons/dot-small-svgrepo-com.svg"
+                  alt=""
+                  width="20"
+                  height="20"
+                />
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdownHome">
+                <li><a class="dropdown-item" href="#">Home Style 1</a></li>
+                <li><a class="dropdown-item" href="#">Home Style 2</a></li>
+                <li><a class="dropdown-item" href="#">Home Style 3</a></li>
+              </ul>
+            </li>
+
+            <!-- Include all your other nav items exactly as they were -->
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link text-white d-inline-flex align-items-end gap-0"
+                href="#"
+                id="navbarDropdownCatalogue"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Catalogue
+                <img
+                  src="icons/dot-small-svgrepo-com.svg"
+                  alt=""
+                  width="20"
+                  height="20"
+                />
+              </a>
+              <ul
+                class="dropdown-menu"
+                aria-labelledby="navbarDropdownCatalogue"
+              >
+                <li><a class="dropdown-item" href="#">Catalogue</a></li>
+                <li class="dropdown-submenu">
+                  <a
+                    class="dropdown-item nested-list d-inline-flex align-items-center"
+                    href="#"
+                    id="nestedgenres"
+                    role="button"
+                  >
+                    Catalogue dropdown
+                    <img
+                      src="icons/dot-svgrepo-com-primary.svg"
+                      alt=""
+                      width="40"
+                      height="40"
+                    />
+                  </a>
+                  <ul
+                    class="dropdown-menu dropdown-menu-end"
+                    aria-labelledby="nestedgenres"
+                  >
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Biography</a></li>
+                    <li>
+                      <a class="dropdown-item" href="#">Documentary</a>
+                    </li>
+                    <li><a class="dropdown-item" href="#">Horror</a></li>
+                    <li><a class="dropdown-item" href="#">Romance</a></li>
+                    <li><a class="dropdown-item" href="#">Musical</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Category Style 1</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Category Style 2</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Details Style 1</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Details Style 2</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Details Style 3</a>
+                </li>
+              </ul>
+            </li>
+
+            <li class="nav-item">
+              <a href="#" class="nav-link text-white">Pricing Plans</a>
+            </li>
+
+            <li class="nav-item">
+              <a
+                href="#"
+                class="nav-link text-white d-inline-flex align-items-end gap-0"
+              >
+                Live
+                <img
+                  src="icons/dot-svgrepo-com.svg"
+                  alt=""
+                  width="20"
+                  height="20"
+                />
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a
+                href="#"
+                class="nav-link"
+                id="navbarDropdownMore"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <img
+                  src="icons/dot-menu-more-2-svgrepo-com.svg"
+                  alt=""
+                  width="20"
+                  height="20"
+                />
+              </a>
+              <ul
+                class="dropdown-menu overflow-auto"
+                style="max-height: 200px"
+                aria-labelledby="navbarDropdownMore"
+              >
+                <li><a class="dropdown-item" href="#">About us</a></li>
+                <li><a class="dropdown-item" href="#">Profile</a></li>
+                <li><a class="dropdown-item" href="#">Contacts</a></li>
+                <li><a class="dropdown-item" href="#">Interview</a></li>
+                <li><a class="dropdown-item" href="#">Admin Pages</a></li>
+                <li>
+                  <a class="dropdown-item" href="#">Privacy policy</a>
+                </li>
+                <li><a class="dropdown-item" href="#">Sign in</a></li>
+                <li><a class="dropdown-item" href="#">Sign up</a></li>
+                <li>
+                  <a class="dropdown-item" href="#">Forgot password</a>
+                </li>
+                <li><a class="dropdown-item" href="#">404 page</a></li>
+              </ul>
+            </li>
+          </ul>
+
+          <!-- Mobile search form -->
+          <form class="d-flex mb-3 px-3 d-lg-none" id="mobileSearchForm">
+            <div class="input-group">
+              <input
+                class="form-control rounded-start-4 border-0"
+                type="search"
+                placeholder="I'm looking for..."
+                aria-label="Search"
+              />
+              <span class="input-group-text bg-white rounded-end-4 border-0">
+                <img
+                  src="icons/search-4-svgrepo-com.svg"
+                  alt=""
+                  width="20"
+                  height="20"
+                />
+              </span>
+            </div>
+          </form>
+
+          <!-- Mobile sign in -->
+          <a
+            href="#"
+            class="text-white d-flex align-items-center mb-3 px-3 d-lg-none"
+          >
+            Sign in
+            <img
+              src="icons/enter-svgrepo-com.svg"
+              alt=""
+              width="20"
+              height="20"
+              class="ms-2"
+            />
+          </a>
+        </div>
+
+        <!-- Desktop search and sign in -->
+        <div class="d-none d-lg-flex align-items-center ms-auto">
+          <form class="d-flex me-3">
+            <div class="input-group">
+              <input
+                class="form-control rounded-start-4 border-0"
+                type="search"
+                placeholder="I'm looking for..."
+                aria-label="Search"
+              />
+              <span class="input-group-text bg-white rounded-end-4 border-0">
+                <img
+                  src="icons/search-4-svgrepo-com.svg"
+                  alt=""
+                  width="20"
+                  height="20"
+                />
+              </span>
+            </div>
+          </form>
+          <a href="#" class="text-white d-flex align-items-center">
+            Sign in
+            <img
+              src="icons/enter-svgrepo-com.svg"
+              alt=""
+              width="20"
+              height="20"
+              class="ms-2"
+            />
+          </a>
+        </div>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<header class="py-4">
+  <div class="container">
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid p-0">
+        <div class="d-flex align-items-center w-100">
+          <!-- Menu button and logo side by side -->
+          <div class="d-flex align-items-center">
+            <a class="navbar-brand" href="#">
+              Cine<span class="text-danger">Max</span>
+            </a>
+          </div>
+
+          <!-- Search icon (will trigger search input) -->
+          <button class="btn border-0 ms-auto me-2 d-lg-none" id="searchToggle">
+            <img
+              src="icons/search-4-svgrepo-com.svg"
+              alt=""
+              width="20"
+              height="20"
+            />
+          </button>
+
+          <!-- Sign in icon (will trigger sign in modal) -->
+          <button
+            class="btn border-0 me-2 d-lg-none"
+            id="signInToggle"
+            data-bs-toggle="modal"
+            data-bs-target="#signInModal"
+          >
+            <img
+              src="icons/enter-svgrepo-com.svg"
+              alt=""
+              width="20"
+              height="20"
+            />
+          </button>
+
+          <!-- Close button (hidden by default) -->
+          <button
+            type="button"
+            class="btn-close d-none ms-auto"
+            aria-label="Close"
+            id="menuClose"
+          >
+            <img src="icons/close-bold-svgrepo-com.svg" alt="" />
+          </button>
+        </div>
+
+        <!-- Search input (hidden by default) -->
+        <form class="d-none mt-2" id="searchForm">
+          <div class="input-group">
+            <input
+              class="form-control rounded-start-4 border-0"
+              type="search"
+              placeholder="I'm looking for..."
+              aria-label="Search"
+            />
+            <span class="input-group-text bg-white rounded-end-4 border-0">
+              <img
+                src="icons/search-4-svgrepo-com.svg"
+                alt=""
+                width="20"
+                height="20"
+              />
+            </span>
+          </div>
+        </form>
+
+        <!-- Main menu content -->
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul
+            class="navbar-nav me-auto mb-2 mb-lg-0 d-flex justify-content-center gap-2"
+          >
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link active text-white d-inline-flex align-items-end gap-0 fs-6"
+                href="#"
+                id="navbarDropdownHome"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Home
+                <img
+                  src="icons/dot-small-svgrepo-com.svg"
+                  alt=""
+                  width="20"
+                  height="20"
+                />
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdownHome">
+                <li><a class="dropdown-item" href="#">Home Style 1</a></li>
+                <li><a class="dropdown-item" href="#">Home Style 2</a></li>
+                <li><a class="dropdown-item" href="#">Home Style 3</a></li>
+              </ul>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link text-white d-inline-flex align-items-end gap-0"
+                href="#"
+                id="navbarDropdownCatalogue"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Catalogue
+                <img
+                  src="icons/dot-small-svgrepo-com.svg"
+                  alt=""
+                  width="20"
+                  height="20"
+                />
+              </a>
+              <ul
+                class="dropdown-menu"
+                aria-labelledby="navbarDropdownCatalogue"
+              >
+                <li><a class="dropdown-item" href="#">Catalogue</a></li>
+                <li class="dropdown-submenu">
+                  <a
+                    class="dropdown-item nested-list d-inline-flex align-items-center"
+                    href="#"
+                    id="nestedgenres"
+                    role="button"
+                  >
+                    Catalogue dropdown
+                    <img
+                      src="icons/dot-svgrepo-com-primary.svg"
+                      alt=""
+                      width="40"
+                      height="40"
+                    />
+                  </a>
+                  <ul
+                    class="dropdown-menu dropdown-menu-end"
+                    aria-labelledby="nestedgenres"
+                  >
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Biography</a></li>
+                    <li>
+                      <a class="dropdown-item" href="#">Documentary</a>
+                    </li>
+                    <li><a class="dropdown-item" href="#">Horror</a></li>
+                    <li><a class="dropdown-item" href="#">Romance</a></li>
+                    <li><a class="dropdown-item" href="#">Musical</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Category Style 1</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Category Style 2</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Details Style 1</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Details Style 2</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Details Style 3</a>
+                </li>
+              </ul>
+            </li>
+
+            <li class="nav-item">
+              <a href="#" class="nav-link text-white">Pricing Plans</a>
+            </li>
+
+            <li class="nav-item">
+              <a
+                href="#"
+                class="nav-link text-white d-inline-flex align-items-end gap-0"
+              >
+                Live
+                <img
+                  src="icons/dot-svgrepo-com.svg"
+                  alt=""
+                  width="20"
+                  height="20"
+                />
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a
+                href="#"
+                class="nav-link"
+                id="navbarDropdownMore"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <img
+                  src="icons/dot-menu-more-2-svgrepo-com.svg"
+                  alt=""
+                  width="20"
+                  height="20"
+                />
+              </a>
+              <ul
+                class="dropdown-menu overflow-auto"
+                style="max-height: 200px"
+                aria-labelledby="navbarDropdownMore"
+              >
+                <li><a class="dropdown-item" href="#">About us</a></li>
+                <li><a class="dropdown-item" href="#">Profile</a></li>
+                <li><a class="dropdown-item" href="#">Contacts</a></li>
+                <li><a class="dropdown-item" href="#">Interview</a></li>
+                <li><a class="dropdown-item" href="#">Admin Pages</a></li>
+                <li>
+                  <a class="dropdown-item" href="#">Privacy policy</a>
+                </li>
+                <li><a class="dropdown-item" href="#">Sign in</a></li>
+                <li><a class="dropdown-item" href="#">Sign up</a></li>
+                <li>
+                  <a class="dropdown-item" href="#">Forgot password</a>
+                </li>
+                <li><a class="dropdown-item" href="#">404 page</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Desktop search and sign in -->
+        <div class="d-none d-lg-flex align-items-center">
+          <form class="d-flex me-3">
+            <div class="input-group">
+              <input
+                class="form-control rounded-start-4 border-0"
+                type="search"
+                placeholder="I'm looking for..."
+                aria-label="Search"
+              />
+              <span class="input-group-text bg-white rounded-end-4 border-0">
+                <img
+                  src="icons/search-4-svgrepo-com.svg"
+                  alt=""
+                  width="20"
+                  height="20"
+                />
+              </span>
+            </div>
+          </form>
+
+          <a href="#" class="text-white d-flex align-items-center">
+            Sign in
+            <img
+              src="icons/enter-svgrepo-com.svg"
+              alt=""
+              width="20"
+              height="20"
+            />
+          </a>
+        </div>
+      </div>
+    </nav>
+  </div>
+</header>
