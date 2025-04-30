@@ -10,19 +10,16 @@ body {
   z-index: 1000;
 }
 
-/* Dropdown menu styling */
 .dropdown-menu {
   border: none;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
 
-/* Nested dropdown positioning */
 .dropend .dropdown-menu {
   margin-top: -10px;
   margin-left: 5px;
 }
 
-/* Mobile menu full width */
 @media (max-width: 991.98px) {
   .navbar-collapse {
     position: fixed;
@@ -33,6 +30,7 @@ body {
     padding: 20px;
     max-height: calc(100vh - 80px);
     overflow-y: auto;
+    /* z-index:6; */
   }
 
   .dropdown-menu {
@@ -43,7 +41,6 @@ body {
   }
 }
 
-/* Active nav link color */
 .nav-link.active,
 .dropdown-item:active,
 .dropdown-item.active {
@@ -51,78 +48,188 @@ body {
   background-color: #131720;
 }
 
-/* Hover effects */
 .nav-link:hover,
 .dropdown-item:hover {
   color: #2f80ed !important;
   transition: 0.3s ease;
 }
 
-/* .swiperI {
-  width: 100%;
-  height: 100%;
+.header-search {
+  background-color: #151f30;
+  z-index: 7;
 }
 
-.hero-swiper {
-  text-align: center;
-  font-size: 18px;
-  background: #fff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.search-icon {
+  background-color: #151f30;
+  z-index: 7;
 }
 
-.hero-swiper img {
-width: 413px;
-  height:329px;
-  object-fit: cover;
+.header-search::placeholder {
+  color: #fff;
+  z-index: 7;
 }
-
-.hero-swiper {
-  padding: 0 10px;
-} */
-
-/* .swiper-slide img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-} */
 
 .swiperI {
   width: 100%;
-  height: auto; /* Adjust height to fit content */
+  height: auto;
 }
 
-.swiper-wrapper {
-  display: flex; /* Ensure slides are laid out horizontally */
+.wrapper-hero {
+  display: flex;
 }
 
-.swiper-slide {
-  width: 413px; /* Set the fixed width of each slide */
-  height: 329px; /* Set the fixed height of each slide */
-  flex-shrink: 0; /* Prevent slides from shrinking */
-  display: flex; /* Center the image within the slide */
+.hero-swiper {
+  width: 413px; /* Maintain width on larger screens */
+  height: 329px; /* Maintain height on larger screens */
+  flex-shrink: 0;
+  display: flex;
   justify-content: center;
   align-items: center;
+  cursor:pointer;
 }
 
 @media (max-width: 768px) {
-  .swiper-slide {
-    width: 100%; /* Make slides full width on smaller screens */
-    height: auto; /* Adjust height to fit content */
+  .hero-swiper {
+    width: 100%; /* Maintain width on larger screens */
+    height: 50%; /* Maintain height on larger screens */
+    flex-shrink: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
-  .hero-swiper img {
-    width: 100%; /* Make the image fill its container */
-    height: 100%;
-    object-fit: contain; /* Ensure the entire image is visible within the fixed dimensions */
+}
+
+.hero-swiper:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  display: block;
+  z-index: 2;
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0.1) 0%,
+    rgba(0, 0, 0, 0.8) 75%,
+    rgba(0, 0, 0, 0.9) 100%
+  );
+  border-radius: 1rem;
+  opacity: 0.65;
+  transition: all 0.3s ease;
+}
+
+.hero-swiper:hover:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: auto;
+  width: 100%;
+  display: block;
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0.6) 0%,
+    rgba(0, 0, 0, 0.8) 75%,
+    rgba(0, 0, 0, 0.9) 100%
+  );
+  opacity: 1;
+  transition: all 0.3s ease;
+  z-index: 4;
+  border-radius: 1rem;
+}
+
+.movie-image {
+  transition: transform 0.3s ease; /* Smooth scaling */
+}
+
+.movie-card:hover .movie-image {
+  transform: scale(1.05); /* 5% zoom (adjust as needed) */
+}
+
+.movie-card:hover .movie-title {
+  color: #007bff !important;
+  transition: color 0.6s ease;
+}
+
+/* Base styles */
+.movie-card {
+  overflow: hidden;
+  transition: all 0.9s ease;
+}
+
+.movie-content {
+  z-index: 5;
+}
+
+/* Hide controls by default */
+.save-btn,
+.rating {
+  opacity: 0;
+  transition: opacity 0.9s ease;
+}
+
+/* Show controls on card hover */
+.movie-card:hover .save-btn,
+.movie-card:hover .rating {
+  opacity: 1;
+  z-index: 5;
+}
+
+/* Save Button Hover Effect */
+.save-btn {
+  cursor: pointer;
+}
+.save-blue {
+  display: block;
+}
+.save-yellow {
+  display: none;
+  position: absolute;
+  /* top: 0;
+  left: 0; */
+}
+.save-btn:hover .save-blue {
+  display: none;
+}
+.save-btn:hover .save-yellow {
+  display: block;
+}
+
+.rating {
+  background-color: rgba(21, 23, 40, 0.8);
+}
+
+@media (max-width: 768px) {
+  .hero-swiper {
+    width: 100%; /* Full width on smaller screens */
+    height: auto; /* Auto height to maintain aspect ratio */
   }
+
+  .hero-img {
+    width: 100%; /* Responsive width */
+    height: auto; /* Responsive height */
+    object-fit: cover; /* Maintain aspect ratio */
+  }
+}
+
+/* Image Styling */
+.movie-image {
+  object-fit: cover;
+  display: block;
 }
 
 /* catalogue */
 .catalogue-nav {
   background-color: #151f30;
 }
+
+/* .select-form{
+  background: #151f30;
+} */
 
 .btn-category .btn-tabs {
   background-color: #131720;
@@ -135,7 +242,7 @@ width: 413px;
 }
 
 .btn-category .btn-tabs::after {
-  content: '';
+  content: "";
   position: absolute;
   bottom: -2px;
   left: 0;
@@ -163,9 +270,9 @@ width: 413px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 } */
 
-
 .play-button {
   opacity: 0;
+  transition: opacity 0.36 ease;
   transform: scale(1.01);
 }
 .play-button:hover {
@@ -184,8 +291,26 @@ width: 413px;
   margin-top: 5px;
 }
 
-.custom-card:hover {
+.custom-card:before {
+  content: "";
+  position: absolute;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  width:100%;
+  height:auto;
+  background: linear-gradient(180deg, rgba(0,0,0,0.1)0%, rgba(0,0,0,0.3)75%, rgba(0,0,0,0.9)100%);
+  z-index:2;
+  opacity:0.65s;
+  transition: all 0.3s ease
+}
+
+.custom-card:hover .play-button, 
+.custom-card:hover .save-btn,
+.custom-card:hover .rating {
   opacity: 1;
+  z-index: 5;
 }
 
 .load-more-btn {
@@ -203,7 +328,7 @@ width: 413px;
     display: flex;
     justify-content: space-between;
   }
-  
+
   .btn-category .btn-tabs {
     flex: 1;
     text-align: center;
@@ -215,7 +340,7 @@ width: 413px;
   .nav-catalogue {
     padding: 0.5rem !important;
   }
-  
+
   .form-select {
     font-size: 0.875rem;
   }
@@ -228,7 +353,7 @@ width: 413px;
   position: relative;
 }
 
-.swiper-slide {
+.sub-swiper {
   text-align: center;
   font-size: 18px;
   /* background: #fff; */
@@ -240,8 +365,8 @@ width: 413px;
 /* Custom arrow styling */
 .swiper-button-prev {
   position: absolute;
-  top:50;
-  left:0;
+  top: 50;
+  left: 0;
   color: white; /* Arrow color */
   background: rgba(0, 0, 0, 0.7);
   width: 40px;
@@ -253,8 +378,8 @@ width: 413px;
 
 .swiper-button-next {
   position: absolute;
-  top:50;
-  right:0;
+  top: 50;
+  right: 0;
   color: white; /* Arrow color */
   background: rgba(0, 0, 0, 0.7);
   width: 40px;
@@ -284,11 +409,11 @@ width: 413px;
 } */
 
 @media (max-width: 768px) {
-  .swiperII{
-    position:relative;
+  .swiperII {
+    position: relative;
   }
 
-  .swiper-slide {
+  .sub-swiper {
     width: 100%; /* Make slides full width on smaller screens */
     height: auto; /* Adjust height to fit content */
   }
@@ -297,13 +422,12 @@ width: 413px;
     height: 100%;
     object-fit: cover; /* Ensure the entire image is visible within the fixed dimensions */
   }
-  .swiper-button-prev
-  {
+  .swiper-button-prev {
     position: absolute;
     top: 80px;
     left: 2px;
-  }.swiper-button-next
-  {
+  }
+  .swiper-button-next {
     position: absolute;
     top: 80px;
     right: 2px;
@@ -337,6 +461,54 @@ width: 413px;
 .btn-select {
   background-color: #131720;
 }
+.btn-select:hover {
+  background-color: #2f80ed;
+  color: white;
+  transition: background-color 1s ease;
+}
+.swiperIII {
+  width: 100%;
+  height: auto; /* Better than fixed vh for mobile */
+  padding-bottom: 20px; /* Space for pagination */
+}
+
+.seg-swiper {
+  width: 100%;
+  font-size: 18px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 10px;
+  padding-bottom: 20px;
+}
+
+.seg-swiper img {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.seg-swiper {
+  width: 80%;
+}
+
+.seg-swiper:nth-child(2n) {
+  width: 60%;
+}
+
+.seg-swiper:nth-child(3n) {
+  width: 40%;
+}
+
+/* .seg-text {
+  font-size: 18px;
+  font-weight:bold
+  margin: 0;
+  padding: 8px 0;
+  width: 100%;
+} */
 
 /* Footer */
 footer {

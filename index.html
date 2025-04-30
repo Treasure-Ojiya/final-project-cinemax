@@ -11,11 +11,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
     />
 
-    <link
-      href="css/main.min.css"
-      rel="stylesheet"
-      
-    />
+    <link href="css/main.min.css" rel="stylesheet" />
 
     <link
       rel="stylesheet"
@@ -42,7 +38,7 @@
     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script> -->
   </head>
   <body>
-    <header class="header py-4">
+    <header class="header py-4 mb-2 mt-2 seg-text">
       <div class="container">
         <nav
           class="navbar navbar-expand-lg navbar-dark p-0 d-flex justify-content-between align-items-center"
@@ -83,7 +79,7 @@
             >
               <li class="nav-item dropdown">
                 <a
-                  class="nav-link d-flex align-items-end text-white d-inline-flex align-items-end gap-0 fs-6"
+                  class="nav-link d-flex align-items-end text-white d-inline-flex align-items-end gap-0 fs-6 fw-semibold"
                   href="#"
                   id="homeDropdown"
                   data-bs-toggle="dropdown"
@@ -121,7 +117,7 @@
 
               <li class="nav-item dropdown">
                 <a
-                  class="nav-link text-white d-inline-flex align-items-end gap-0"
+                  class="nav-link text-white d-inline-flex align-items-end gap-0 fw-semibold"
                   href="#"
                   id="catalogDropdown"
                   data-bs-toggle="dropdown"
@@ -214,12 +210,14 @@
               </li>
 
               <li class="nav-item">
-                <a class="nav-link text-white" href="#">Pricing plans</a>
+                <a class="nav-link text-white fw-semibold" href="#"
+                  >Pricing plans</a
+                >
               </li>
 
               <li class="nav-item">
                 <a
-                  class="nav-link text-white d-inline-flex align-items-end gap-0"
+                  class="nav-link text-white d-inline-flex align-items-end gap-0 fw-semibold"
                   href="#"
                 >
                   LIVE
@@ -297,20 +295,20 @@
             <form class="d-none d-lg-flex me-3">
               <div class="input-group">
                 <input
-                  class="form-control rounded-start-4 border-0"
+                  class="form-control header-search rounded-start-4 border-0 py-2"
                   type="search"
                   placeholder="I'm looking for..."
                   aria-label="Search"
                 />
                 <span
-                  class="btn btn-link input-group-text bg-white rounded-end-4 border-0text-decoration-none"
+                  class="btn btn-link input-group-text search-icon rounded-end-4 border-0text-decoration-none py-2"
                   type="submit"
                 >
                   <img
                     src="icons/search-4-svgrepo-com.svg"
                     alt=""
-                    width="20"
-                    height="20"
+                    width="30"
+                    height="30"
                   />
                 </span>
               </div>
@@ -377,23 +375,921 @@
       </div>
     </header>
 
-    <section id="hero-loop">
+    <section id="hero-loop" class="mb-5">
       <div class="swiper swiperI mySwiper heroSwiper">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide  hero-swiper"><img src="movie_img/the-devil-wears-prada-movie-poster.webp" alt="" width="413" height="329" class="rounded-4"></div>
-          <div class="swiper-slide hero-swiper"><img src="movie_img/the-sound-of-music-movie-poster.webp" alt="" width="413" height="329" class="rounded-4"></div>
-          <div class="swiper-slide hero-swiper"><img src="movie_img/no-country-for-old-men-movie-poster.webp" alt="" width="413" height="329" class="rounded-4"></div>
-          <div class="swiper-slide hero-swiper"><img src="movie_img/pulp-fiction-movie-poster.webp" alt="" width="413" height="329" class="rounded-4"></div>
-          <div class="swiper-slide hero-swiper"><img src="movie_img/groundhog-day-movie-poster.webp" alt="" width="413" height="329" class="rounded-4"></div>
-          <div class="swiper-slide hero-swiper"><img src="movie_img/hereditary-movie-poster.webp" alt="" width="413" height="329" class="rounded-4"></div>
-          <div class="swiper-slide hero-swiper"><img src="movie_img/heretic-movie-poster.webp" alt="" width="413" height="329" class="rounded-4"></div>
-          <div class="swiper-slide hero-swiper"><img src="movie_img/fifty-shades-of-grey-movie-poster.webp" alt="" width="413" height="329" class="rounded-4"></div>
-          <div class="swiper-slide hero-swiper"><img src="movie_img/quantum-of-solace-movie-poster.webp" alt="" width="413" height="329" class="rounded-4"></div>
-          <div class="swiper-slide hero-swiper"><img src="movie_img/the-dark-knight-movie-poster.webp" alt="" width="413" height="329" class="rounded-4"></div>
-          <div class="swiper-slide hero-swiper"><img src="movie_img/the-godfather-movie-poster.jpg" alt="" width="413" height="329" class="rounded-4"></div>
-          <div class="swiper-slide hero-swiper"><img src="movie_img/the-notebook-movie-poster.webp" alt="" width="413" height="329" class="rounded-4"></div>
-          <div class="swiper-slide hero-swiper"><img src="movie_img/spectre-theatrical-movie-poster.webp" alt="" width="413" height="329" class="rounded-4"></div>
-          <div class="swiper-slide hero-swiper"><img src="movie_img/the-shawshank-redemption-movie-poster.webp" alt="" width="413" height="329" class="rounded-4"></div>
+        <div class="swiper-wrapper wrapper-hero pb-5">
+          <div
+            class="swiper-slide hero-swiper movie-card position relative overflow-hidden"
+          ><a href="" class="w-100">
+            <img
+              src="movie_img/the-devil-wears-prada-movie-poster.webp"
+              alt=""
+              width="413"
+              height="329"
+              class="hero-img rounded-4 w-100 object-fit-cover transition-transform"
+            />
+
+            <!-- Bottom Text Content -->
+            <div
+              class="movie-content position-absolute bottom-0 start-0 w-100 p-3"
+            >
+              <p class="movie-title text-white mb-1 fw-semibold fs-4">
+                The Devil Wears Prada
+              </p>
+              <ul class="movie-genres d-flex gap-2 list-unstyled mb-0">
+                <li class="text-white">Drama</li>
+                <li class="text-white">Free</li>
+                <li class="text-white">2006</li>
+              </ul>
+            </div>
+
+            <!-- Save Button (Hidden by Default) -->
+            <div
+              class="d-flex justify-content-between align-items-center top-0"
+            >
+              <button
+                class="save-btn position-absolute top-0 start-0 m-2 bg-transparent border-0"
+              >
+                <img
+                  src="icons/save-blue.svg"
+                  alt="Save"
+                  class="save-icon save-blue"
+                  width="25"
+                  height="25"
+                />
+                <img
+                  src="icons/save-yellow.svg"
+                  alt="Saved"
+                  class="save-icon save-yellow"
+                  width="25"
+                  height="25"
+                />
+              </button>
+
+              <!-- Rating (Hidden by Default) -->
+              <div
+                class="rating position-absolute top-0 end-0 m-2 d-flex align-items-center justify-content-center gap-2 text-white px-2 py-1 rounded"
+              >
+                <img
+                  src="icons/rating.svg"
+                  alt="Rating"
+                  width="22"
+                  height="22"
+                  class="d-inline-flex"
+                />
+                <span class="text-white">8.8</span>
+              </div>
+            </div>
+          </a>
+          </div>
+
+          <div
+            class="swiper-slide hero-swiper movie-card position relative overflow-hidden"
+          ><a href="" class="w-100">
+            <img
+              src="movie_img/the-sound-of-music-movie-poster.webp"
+              alt=""
+              width="413"
+              height="329"
+              class="hero-img rounded-4 w-100 object-fit-cover transition-transform"
+            />
+
+            <!-- Bottom Text Content -->
+            <div
+              class="movie-content position-absolute bottom-0 start-0 w-100 p-3"
+            >
+              <p class="movie-title text-white mb-1 fw-semibold fs-4">
+                The Sound Of Music
+              </p>
+              <ul class="movie-genres d-flex gap-2 list-unstyled mb-0">
+                <li class="text-white">Musical</li>
+                <li class="text-white">Free</li>
+                <li class="text-white">1965</li>
+              </ul>
+            </div>
+
+            <!-- Save Button (Hidden by Default) -->
+            <div
+              class="d-flex justify-content-between align-items-center top-0"
+            >
+              <button
+                class="save-btn position-absolute top-0 start-0 m-2 bg-transparent border-0"
+              >
+                <img
+                  src="icons/save-blue.svg"
+                  alt="Save"
+                  class="save-icon save-blue"
+                  width="25"
+                  height="25"
+                />
+                <img
+                  src="icons/save-yellow.svg"
+                  alt="Saved"
+                  class="save-icon save-yellow"
+                  width="25"
+                  height="25"
+                />
+              </button>
+
+              <!-- Rating (Hidden by Default) -->
+              <div
+                class="rating position-absolute top-0 end-0 m-2 d-flex align-items-center justify-content-center gap-2 text-white px-2 py-1 rounded"
+              >
+                <img
+                  src="icons/rating.svg"
+                  alt="Rating"
+                  width="22"
+                  height="22"
+                  class="d-inline-flex"
+                />
+                <span class="text-white">8.8</span>
+              </div>
+            </div>
+          </a>
+          </div>
+
+          <div
+            class="swiper-slide hero-swiper movie-card position relative overflow-hidden"
+          ><a href="" class="w-100">
+            <img
+              src="movie_img/no-country-for-old-men-movie-poster.webp"
+              alt=""
+              width="413"
+              height="329"
+              class="hero-img rounded-4 w-100 object-fit-cover transition-transform"
+            />
+
+            <!-- Bottom Text Content -->
+            <div
+              class="movie-content position-absolute bottom-0 start-0 w-100 p-3"
+            >
+              <p class="movie-title text-white mb-1 fw-semibold fs-4">
+                No Country For Old Men
+              </p>
+              <ul class="movie-genres d-flex gap-2 list-unstyled mb-0">
+                <li class="text-white">Drama</li>
+                <li class="text-white">Free</li>
+                <li class="text-white">2007</li>
+              </ul>
+            </div>
+
+            <!-- Save Button (Hidden by Default) -->
+            <div
+              class="d-flex justify-content-between align-items-center top-0"
+            >
+              <button
+                class="save-btn position-absolute top-0 start-0 m-2 bg-transparent border-0"
+              >
+                <img
+                  src="icons/save-blue.svg"
+                  alt="Save"
+                  class="save-icon save-blue"
+                  width="25"
+                  height="25"
+                />
+                <img
+                  src="icons/save-yellow.svg"
+                  alt="Saved"
+                  class="save-icon save-yellow"
+                  width="25"
+                  height="25"
+                />
+              </button>
+
+              <!-- Rating (Hidden by Default) -->
+              <div
+                class="rating position-absolute top-0 end-0 m-2 d-flex align-items-center justify-content-center gap-2 text-white px-2 py-1 rounded"
+              >
+                <img
+                  src="icons/rating.svg"
+                  alt="Rating"
+                  width="22"
+                  height="22"
+                  class="d-block"
+                />
+                <span class="fw-medium">8.3</span>
+              </div>
+            </div>
+          </a>
+          </div>
+
+          <div
+            class="swiper-slide hero-swiper movie-card position relative overflow-hidden"
+          ><a href="" class="w-100">
+            <img
+              src="movie_img/pulp-fiction-movie-poster.webp"
+              alt=""
+              width="413"
+              height="329"
+              class="hero-img rounded-4 w-100 object-fit-cover transition-transform"
+            />
+
+            <!-- Bottom Text Content -->
+            <div
+              class="movie-content position-absolute bottom-0 start-0 w-100 p-3"
+            >
+              <p class="movie-title text-white mb-1 fw-semibold fs-4">
+                Pulp Fiction
+              </p>
+              <ul class="movie-genres d-flex gap-2 list-unstyled mb-0">
+                <li class="text-white">Crime</li>
+                <li class="text-white">Free</li>
+                <li class="text-white">1994</li>
+              </ul>
+            </div>
+
+            <!-- Save Button (Hidden by Default) -->
+            <div
+              class="d-flex justify-content-between align-items-center top-0"
+            >
+              <button
+                class="save-btn position-absolute top-0 start-0 m-2 bg-transparent border-0"
+              >
+                <img
+                  src="icons/save-blue.svg"
+                  alt="Save"
+                  class="save-icon save-blue"
+                  width="25"
+                  height="25"
+                />
+                <img
+                  src="icons/save-yellow.svg"
+                  alt="Saved"
+                  class="save-icon save-yellow"
+                  width="25"
+                  height="25"
+                />
+              </button>
+
+              <!-- Rating (Hidden by Default) -->
+              <div
+                class="rating position-absolute top-0 end-0 m-2 d-flex align-items-center justify-content-center gap-2 text-white px-2 py-1 rounded"
+              >
+                <img
+                  src="icons/rating.svg"
+                  alt="Rating"
+                  width="22"
+                  height="22"
+                  class="d-inline-flex"
+                />
+                <span class="text-white">8.8</span>
+              </div>
+            </div>
+          </a>
+          </div>
+
+          <div
+            class="swiper-slide hero-swiper movie-card position relative overflow-hidden"
+          ><a href="" class="w-100">
+            <img
+              src="movie_img/groundhog-day-movie-poster.webp"
+              alt=""
+              width="413"
+              height="329"
+              class="hero-img rounded-4 w-100 object-fit-cover transition-transform"
+            />
+
+            <!-- Bottom Text Content -->
+            <div
+              class="movie-content position-absolute bottom-0 start-0 w-100 p-3"
+            >
+              <p class="movie-title text-white mb-1 fw-semibold fs-4">
+                Groundhog Day
+              </p>
+              <ul class="movie-genres d-flex gap-2 list-unstyled mb-0">
+                <li class="text-white">Drama</li>
+                <li class="text-white">Free</li>
+                <li class="text-white">1994</li>
+              </ul>
+            </div>
+
+            <!-- Save Button (Hidden by Default) -->
+            <div
+              class="d-flex justify-content-between align-items-center top-0"
+            >
+              <button
+                class="save-btn position-absolute top-0 start-0 m-2 bg-transparent border-0"
+              >
+                <img
+                  src="icons/save-blue.svg"
+                  alt="Save"
+                  class="save-icon save-blue"
+                  width="25"
+                  height="25"
+                />
+                <img
+                  src="icons/save-yellow.svg"
+                  alt="Saved"
+                  class="save-icon save-yellow"
+                  width="25"
+                  height="25"
+                />
+              </button>
+
+              <!-- Rating (Hidden by Default) -->
+              <div
+                class="rating position-absolute top-0 end-0 m-2 d-flex align-items-center justify-content-center gap-2 text-white px-2 py-1 rounded"
+              >
+                <img
+                  src="icons/rating.svg"
+                  alt="Rating"
+                  width="22"
+                  height="22"
+                  class="d-inline-flex"
+                />
+                <span class="text-white">8.8</span>
+              </div>
+            </div>
+          </a>
+          </div>
+
+          <div
+            class="swiper-slide hero-swiper movie-card position relative overflow-hidden"
+          ><a href="" class="w-100">
+            <img
+              src="movie_img/hereditary-movie-poster.webp"
+              alt=""
+              width="413"
+              height="329"
+              class="hero-img rounded-4 w-100 object-fit-cover transition-transform"
+            />
+
+            <!-- Bottom Text Content -->
+            <div
+              class="movie-content position-absolute bottom-0 start-0 w-100 p-3"
+            >
+              <p class="movie-title text-white mb-1 fw-semibold fs-4">
+                Hereditary
+              </p>
+              <ul class="movie-genres d-flex gap-2 list-unstyled mb-0">
+                <li class="text-white">Horror</li>
+                <li class="text-white">Free</li>
+                <li class="text-white">2018</li>
+              </ul>
+            </div>
+
+            <!-- Save Button (Hidden by Default) -->
+            <div
+              class="d-flex justify-content-between align-items-center top-0"
+            >
+              <button
+                class="save-btn position-absolute top-0 start-0 m-2 bg-transparent border-0"
+              >
+                <img
+                  src="icons/save-blue.svg"
+                  alt="Save"
+                  class="save-icon save-blue"
+                  width="25"
+                  height="25"
+                />
+                <img
+                  src="icons/save-yellow.svg"
+                  alt="Saved"
+                  class="save-icon save-yellow"
+                  width="25"
+                  height="25"
+                />
+              </button>
+
+              <!-- Rating (Hidden by Default) -->
+              <div
+                class="rating position-absolute top-0 end-0 m-2 d-flex align-items-center justify-content-center gap-2 text-white px-2 py-1 rounded"
+              >
+                <img
+                  src="icons/rating.svg"
+                  alt="Rating"
+                  width="22"
+                  height="22"
+                  class="d-inline-flex"
+                />
+                <span class="text-white">8.8</span>
+              </div>
+            </div>
+          </a>
+          </div>
+
+          <div
+            class="swiper-slide hero-swiper movie-card position relative overflow-hidden"
+          ><a href="" class="w-100">
+            <img
+              src="movie_img/heretic-movie-poster.webp"
+              alt=""
+              width="413"
+              height="329"
+              class="hero-img rounded-4 w-100 object-fit-cover transition-transform"
+            />
+
+            <!-- Bottom Text Content -->
+            <div
+              class="movie-content position-absolute bottom-0 start-0 w-100 p-3"
+            >
+              <p class="movie-title text-white mb-1 fw-semibold fs-4">
+                Heretic
+              </p>
+              <ul class="movie-genres d-flex gap-2 list-unstyled mb-0">
+                <li class="text-white">Horror</li>
+                <li class="text-white">Free</li>
+                <li class="text-white">2024</li>
+              </ul>
+            </div>
+
+            <!-- Save Button (Hidden by Default) -->
+            <div
+              class="d-flex justify-content-between align-items-center top-0"
+            >
+              <button
+                class="save-btn position-absolute top-0 start-0 m-2 bg-transparent border-0"
+              >
+                <img
+                  src="icons/save-blue.svg"
+                  alt="Save"
+                  class="save-icon save-blue"
+                  width="25"
+                  height="25"
+                />
+                <img
+                  src="icons/save-yellow.svg"
+                  alt="Saved"
+                  class="save-icon save-yellow"
+                  width="25"
+                  height="25"
+                />
+              </button>
+
+              <!-- Rating (Hidden by Default) -->
+              <div
+                class="rating position-absolute top-0 end-0 m-2 d-flex align-items-center justify-content-center gap-2 text-white px-2 py-1 rounded"
+              >
+                <img
+                  src="icons/rating.svg"
+                  alt="Rating"
+                  width="22"
+                  height="22"
+                  class="d-inline-flex"
+                />
+                <span class="text-white">8.8</span>
+              </div>
+            </div>
+          </a>
+          </div>
+
+          <div
+            class="swiper-slide hero-swiper movie-card position relative overflow-hidden"
+          ><a href="" class="w-100">
+            <img
+              src="movie_img/fifty-shades-of-grey-movie-poster.webp"
+              alt=""
+              width="413"
+              height="329"
+              class="hero-img rounded-4 w-100 object-fit-cover transition-transform"
+            />
+
+            <!-- Bottom Text Content -->
+            <div
+              class="movie-content position-absolute bottom-0 start-0 w-100 p-3"
+            >
+              <p class="movie-title text-white mb-1 fw-semibold fs-4">
+                Fifty Shades of Grey
+              </p>
+              <ul class="movie-genres d-flex gap-2 list-unstyled mb-0">
+                <li class="text-white">Romance</li>
+                <li class="text-white">Free</li>
+                <li class="text-white">2015</li>
+              </ul>
+            </div>
+
+            <!-- Save Button (Hidden by Default) -->
+            <div
+              class="d-flex justify-content-between align-items-center top-0"
+            >
+              <button
+                class="save-btn position-absolute top-0 start-0 m-2 bg-transparent border-0"
+              >
+                <img
+                  src="icons/save-blue.svg"
+                  alt="Save"
+                  class="save-icon save-blue"
+                  width="25"
+                  height="25"
+                />
+                <img
+                  src="icons/save-yellow.svg"
+                  alt="Saved"
+                  class="save-icon save-yellow"
+                  width="25"
+                  height="25"
+                />
+              </button>
+
+              <!-- Rating (Hidden by Default) -->
+              <div
+                class="rating position-absolute top-0 end-0 m-2 d-flex align-items-center justify-content-center gap-2 text-white px-2 py-1 rounded"
+              >
+                <img
+                  src="icons/rating.svg"
+                  alt="Rating"
+                  width="22"
+                  height="22"
+                  class="d-inline-flex"
+                />
+                <span class="text-white">8.8</span>
+              </div>
+            </div>
+          </a>
+          </div>
+
+          <div
+            class="swiper-slide hero-swiper movie-card position relative overflow-hidden"
+          ><a href="" class="w-100">
+            <img
+              src="movie_img/quantum-of-solace-movie-poster.webp"
+              alt=""
+              width="413"
+              height="329"
+              class="hero-img rounded-4 w-100 object-fit-cover transition-transform"
+            />
+
+            <!-- Bottom Text Content -->
+            <div
+              class="movie-content position-absolute bottom-0 start-0 w-100 p-3"
+            >
+              <p class="movie-title text-white mb-1 fw-semibold fs-4">
+                Quantum Of Solace
+              </p>
+              <ul class="movie-genres d-flex gap-2 list-unstyled mb-0">
+                <li class="text-white">Spy</li>
+                <li class="text-white">Free</li>
+                <li class="text-white">2008</li>
+              </ul>
+            </div>
+
+            <!-- Save Button (Hidden by Default) -->
+            <div
+              class="d-flex justify-content-between align-items-center top-0"
+            >
+              <button
+                class="save-btn position-absolute top-0 start-0 m-2 bg-transparent border-0"
+              >
+                <img
+                  src="icons/save-blue.svg"
+                  alt="Save"
+                  class="save-icon save-blue"
+                  width="25"
+                  height="25"
+                />
+                <img
+                  src="icons/save-yellow.svg"
+                  alt="Saved"
+                  class="save-icon save-yellow"
+                  width="25"
+                  height="25"
+                />
+              </button>
+
+              <!-- Rating (Hidden by Default) -->
+              <div
+                class="rating position-absolute top-0 end-0 m-2 d-flex align-items-center justify-content-center gap-2 text-white px-2 py-1 rounded"
+              >
+                <img
+                  src="icons/rating.svg"
+                  alt="Rating"
+                  width="22"
+                  height="22"
+                  class="d-inline-flex"
+                />
+                <span class="text-white">8.8</span>
+              </div>
+            </div>
+          </a>
+          </div>
+
+          <div
+            class="swiper-slide hero-swiper movie-card position relative overflow-hidden"
+          ><a href="" class="w-100">
+            <img
+              src="movie_img/the-dark-knight-movie-poster.webp"
+              alt=""
+              width="413"
+              height="329"
+              class="hero-img rounded-4 w-100 object-fit-cover transition-transform"
+            />
+
+            <!-- Bottom Text Content -->
+            <div
+              class="movie-content position-absolute bottom-0 start-0 w-100 p-3"
+            >
+              <p class="movie-title text-white mb-1 fw-semibold fs-4">
+                The Dark Knight
+              </p>
+              <ul class="movie-genres d-flex gap-2 list-unstyled mb-0">
+                <li class="text-white">Comicbook</li>
+                <li class="text-white">Free</li>
+                <li class="text-white">2008</li>
+              </ul>
+            </div>
+
+            <!-- Save Button (Hidden by Default) -->
+            <div
+              class="d-flex justify-content-between align-items-center top-0"
+            >
+              <button
+                class="save-btn position-absolute top-0 start-0 m-2 bg-transparent border-0"
+              >
+                <img
+                  src="icons/save-blue.svg"
+                  alt="Save"
+                  class="save-icon save-blue"
+                  width="25"
+                  height="25"
+                />
+                <img
+                  src="icons/save-yellow.svg"
+                  alt="Saved"
+                  class="save-icon save-yellow"
+                  width="25"
+                  height="25"
+                />
+              </button>
+
+              <!-- Rating (Hidden by Default) -->
+              <div
+                class="rating position-absolute top-0 end-0 m-2 d-flex align-items-center justify-content-center gap-2 text-white px-2 py-1 rounded"
+              >
+                <img
+                  src="icons/rating.svg"
+                  alt="Rating"
+                  width="22"
+                  height="22"
+                  class="d-inline-flex"
+                />
+                <span class="text-white">8.8</span>
+              </div>
+            </div>
+          </a>
+          </div>
+
+
+          <div
+            class="swiper-slide hero-swiper movie-card position relative overflow-hidden"
+          ><a href="" class="w-100">
+            <img
+              src="movie_img/the-godfather-movie-poster.jpg"
+              alt=""
+              width="413"
+              height="329"
+              class="hero-img rounded-4 w-100 object-fit-cover transition-transform"
+            />
+
+            <!-- Bottom Text Content -->
+            <div
+              class="movie-content position-absolute bottom-0 start-0 w-100 p-3"
+            >
+              <p class="movie-title text-white mb-1 fw-semibold fs-4">
+                The Godfather
+              </p>
+              <ul class="movie-genres d-flex gap-2 list-unstyled mb-0">
+                <li class="text-white">Crime</li>
+                <li class="text-white">Free</li>
+                <li class="text-white">1992</li>
+              </ul>
+            </div>
+
+            <!-- Save Button (Hidden by Default) -->
+            <div
+              class="d-flex justify-content-between align-items-center top-0"
+            >
+              <button
+                class="save-btn position-absolute top-0 start-0 m-2 bg-transparent border-0"
+              >
+                <img
+                  src="icons/save-blue.svg"
+                  alt="Save"
+                  class="save-icon save-blue"
+                  width="25"
+                  height="25"
+                />
+                <img
+                  src="icons/save-yellow.svg"
+                  alt="Saved"
+                  class="save-icon save-yellow"
+                  width="25"
+                  height="25"
+                />
+              </button>
+
+              <!-- Rating (Hidden by Default) -->
+              <div
+                class="rating position-absolute top-0 end-0 m-2 d-flex align-items-center justify-content-center gap-2 text-white px-2 py-1 rounded"
+              >
+                <img
+                  src="icons/rating.svg"
+                  alt="Rating"
+                  width="22"
+                  height="22"
+                  class="d-inline-flex"
+                />
+                <span class="text-white">8.8</span>
+              </div>
+            </div>
+          </a>
+          </div>
+
+
+          <div
+            class="swiper-slide hero-swiper movie-card position relative overflow-hidden"
+          ><a href="" class="w-100">
+            <img
+              src="movie_img/the-notebook-movie-poster.webp"
+              alt=""
+              width="413"
+              height="329"
+              class="hero-img rounded-4 w-100 object-fit-cover transition-transform"
+            />
+
+            <!-- Bottom Text Content -->
+            <div
+              class="movie-content position-absolute bottom-0 start-0 w-100 p-3"
+            >
+              <p class="movie-title text-white mb-1 fw-semibold fs-4">
+                The Notebook
+              </p>
+              <ul class="movie-genres d-flex gap-2 list-unstyled mb-0">
+                <li class="text-white">Romance</li>
+                <li class="text-white">Free</li>
+                <li class="text-white">2004</li>
+              </ul>
+            </div>
+
+            <!-- Save Button (Hidden by Default) -->
+            <div
+              class="d-flex justify-content-between align-items-center top-0"
+            >
+              <button
+                class="save-btn position-absolute top-0 start-0 m-2 bg-transparent border-0"
+              >
+                <img
+                  src="icons/save-blue.svg"
+                  alt="Save"
+                  class="save-icon save-blue"
+                  width="25"
+                  height="25"
+                />
+                <img
+                  src="icons/save-yellow.svg"
+                  alt="Saved"
+                  class="save-icon save-yellow"
+                  width="25"
+                  height="25"
+                />
+              </button>
+
+              <!-- Rating (Hidden by Default) -->
+              <div
+                class="rating position-absolute top-0 end-0 m-2 d-flex align-items-center justify-content-center gap-2 text-white px-2 py-1 rounded"
+              >
+                <img
+                  src="icons/rating.svg"
+                  alt="Rating"
+                  width="22"
+                  height="22"
+                  class="d-inline-flex"
+                />
+                <span class="text-white">8.8</span>
+              </div>
+            </div>
+          </a>
+          </div>
+
+          <div
+            class="swiper-slide hero-swiper movie-card position relative overflow-hidden"
+          ><a href="" class="w-100">
+            <img
+              src="movie_img/spectre-theatrical-movie-poster.webp"
+              alt=""
+              width="413"
+              height="329"
+              class="hero-img rounded-4 w-100 object-fit-cover transition-transform"
+            />
+
+            <!-- Bottom Text Content -->
+            <div
+              class="movie-content position-absolute bottom-0 start-0 w-100 p-3"
+            >
+              <p class="movie-title text-white mb-1 fw-semibold fs-4">
+                Spectre
+              </p>
+              <ul class="movie-genres d-flex gap-2 list-unstyled mb-0">
+                <li class="text-white">Spy</li>
+                <li class="text-white">Free</li>
+                <li class="text-white">2015</li>
+              </ul>
+            </div>
+
+            <!-- Save Button (Hidden by Default) -->
+            <div
+              class="d-flex justify-content-between align-items-center top-0"
+            >
+              <button
+                class="save-btn position-absolute top-0 start-0 m-2 bg-transparent border-0"
+              >
+                <img
+                  src="icons/save-blue.svg"
+                  alt="Save"
+                  class="save-icon save-blue"
+                  width="25"
+                  height="25"
+                />
+                <img
+                  src="icons/save-yellow.svg"
+                  alt="Saved"
+                  class="save-icon save-yellow"
+                  width="25"
+                  height="25"
+                />
+              </button>
+
+              <!-- Rating (Hidden by Default) -->
+              <div
+                class="rating position-absolute top-0 end-0 m-2 d-flex align-items-center justify-content-center gap-2 text-white px-2 py-1 rounded"
+              >
+                <img
+                  src="icons/rating.svg"
+                  alt="Rating"
+                  width="22"
+                  height="22"
+                  class="d-inline-flex"
+                />
+                <span class="text-white">8.8</span>
+              </div>
+            </div>
+          </a>
+          </div>
+
+
+          <div
+            class="swiper-slide hero-swiper movie-card position relative overflow-hidden"
+          ><a href="" class="w-100">
+            <img
+              src="movie_img/the-shawshank-redemption-movie-poster.webp"
+              alt=""
+              width="413"
+              height="329"
+              class="hero-img rounded-4 w-100 object-fit-cover transition-transform"
+            />
+
+            <!-- Bottom Text Content -->
+            <div
+              class="movie-content position-absolute bottom-0 start-0 w-100 p-3"
+            >
+              <p class="movie-title text-white mb-1 fw-semibold fs-4">
+                The Shawshank Redemption
+              </p>
+              <ul class="movie-genres d-flex gap-2 list-unstyled mb-0">
+                <li class="text-white">Drama</li>
+                <li class="text-white">Free</li>
+                <li class="text-white">1994</li>
+              </ul>
+            </div>
+
+            <!-- Save Button (Hidden by Default) -->
+            <div
+              class="d-flex justify-content-between align-items-center top-0"
+            >
+              <button
+                class="save-btn position-absolute top-0 start-0 m-2 bg-transparent border-0"
+              >
+                <img
+                  src="icons/save-blue.svg"
+                  alt="Save"
+                  class="save-icon save-blue"
+                  width="25"
+                  height="25"
+                />
+                <img
+                  src="icons/save-yellow.svg"
+                  alt="Saved"
+                  class="save-icon save-yellow"
+                  width="25"
+                  height="25"
+                />
+              </button>
+
+              <!-- Rating (Hidden by Default) -->
+              <div
+                class="rating position-absolute top-0 end-0 m-2 d-flex align-items-center justify-content-center gap-2 text-white px-2 py-1 rounded"
+              >
+                <img
+                  src="icons/rating.svg"
+                  alt="Rating"
+                  width="22"
+                  height="22"
+                  class="d-inline-flex"
+                />
+                <span class="text-white">8.8</span>
+              </div>
+            </div>
+          </a>
+          </div>
         </div>
         <div class="swiper-pagination"></div>
       </div>
@@ -403,13 +1299,13 @@
       <div class="container">
         <div class="row bg-muted p-3">
           <div class="col-12">
-            <div class="nav-catalogue catalogue-nav rounded-3 p-2">
+            <div class="nav-catalogue catalogue-nav rounded-4 py-3 px-4">
               <div
-              class="mb-auto d-flex flex-column flex-md-row align-items-center justify-content-between gap-2"
+                class="mb-auto d-flex flex-column flex-md-row align-items-center justify-content-between gap-2"
               >
                 <div class="d-flex gap-1 w-md-auto">
                   <select
-                    class="form-select flex-grow-1 flex-md-grow-0 p-1"
+                    class="form-select select-form flex-grow-1 flex-md-grow-0 p-1  border-none text-white"
                     name="genre"
                     id="genres"
                   >
@@ -450,7 +1346,7 @@
                   </select>
 
                   <select
-                  class="form-select flex-grow-1 flex-md-grow-0 p-1 w-xl-100"
+                    class="form-select select-form flex-grow-1 flex-md-grow-0 p-1 w-xl-100 border-none text-white"
                     name="years"
                     id="byYear"
                   >
@@ -463,23 +1359,41 @@
                   </select>
                 </div>
 
-                <div class="btn-group btn-category rounded-5 py-2 px-3" role="group" aria-label="tab-category-toggle">
-                  <button
-                  type="button" class="btn btn-tabs active" id="featured" data-bs-toggle="tab" href="#featured" name="grade"
-                  >Featured
-                </button>
-                  
-                  <button
-                    type="button"
-                    class="btn btn-tabs" data-bs-toggle="tab" href="#popular"
-                    name="grade"
-                  >Popular</button>
-                  
+                <div
+                  class="btn-group btn-category rounded-5 py-2 px-3"
+                  role="group"
+                  aria-label="tab-category-toggle"
+                >
                   <button
                     type="button"
-                    class="btn btn-tabs" data-bs-toggle="tab" href="#newest"
+                    class="btn btn-tabs active"
+                    id="featured"
+                    data-bs-toggle="tab"
+                    href="#featured"
                     name="grade"
-                  >Newest</button>
+                  >
+                    Featured
+                  </button>
+
+                  <button
+                    type="button"
+                    class="btn btn-tabs"
+                    data-bs-toggle="tab"
+                    href="#popular"
+                    name="grade"
+                  >
+                    Popular
+                  </button>
+
+                  <button
+                    type="button"
+                    class="btn btn-tabs"
+                    data-bs-toggle="tab"
+                    href="#newest"
+                    name="grade"
+                  >
+                    Newest
+                  </button>
                 </div>
 
                 <!-- <div class="tab-content">
@@ -527,6 +1441,15 @@
                   height="60"
                 />
               </a>
+
+              <div class="d-flex align-items-center justify-content-between top-0">
+                <button class="save-btn border-0 position-absolute top-0 start-0 m-2 bg-transparent"><img src="icons/save-blue.svg" alt="" class="save-icon save-blue" width="22" height="22"/>
+                <img src="icons/save-yellow.svg" alt="" class="save-icon save-yellow"  width="22" height="22"/></button>
+
+                <div class="rating d-flex align-items-center justify-content-center gap-2 position-absolute top-0 end-0 m-2 px-2 rounded">
+                  <img src="icons/rating.svg" alt="" width="18" height="18"><span class="text-white">8.0</span>
+                </div>
+              </div>
             </div>
             <div
               class="card-body card__title text-truncate"
@@ -539,7 +1462,7 @@
                 <a
                   href="details.html"
                   class="text-truncate text-white w-100 d-inline-block text-decoration-none"
-                  >The Shawshank Redemption</a
+                  >Glory</a
                 >
               </h5>
             </div>
@@ -569,6 +1492,15 @@
                   height="60"
                 />
               </a>
+
+              <div class="d-flex align-items-center justify-content-between top-0">
+                <button class="save-btn border-0 position-absolute top-0 start-0 m-2 bg-transparent"><img src="icons/save-blue.svg" alt="" class="save-icon save-blue" width="22" height="22"/>
+                <img src="icons/save-yellow.svg" alt="" class="save-icon save-yellow"  width="22" height="22"/></button>
+
+                <div class="rating d-flex align-items-center justify-content-center gap-2 position-absolute top-0 end-0 m-2 px-2 rounded">
+                  <img src="icons/rating.svg" alt="" width="18" height="18"><span class="text-white">8.0</span>
+                </div>
+              </div>
             </div>
             <div class="card-body">
               <h5 class="card__title text-truncate" style="max-width: 100%">
@@ -610,6 +1542,15 @@
                   height="60"
                 />
               </a>
+
+              <div class="d-flex align-items-center justify-content-between top-0">
+                <button class="save-btn border-0 position-absolute top-0 start-0 m-2 bg-transparent"><img src="icons/save-blue.svg" alt="" class="save-icon save-blue" width="22" height="22"/>
+                <img src="icons/save-yellow.svg" alt="" class="save-icon save-yellow"  width="22" height="22"/></button>
+
+                <div class="rating d-flex align-items-center justify-content-center gap-2 position-absolute top-0 end-0 m-2 px-2 rounded">
+                  <img src="icons/rating.svg" alt="" width="18" height="18"><span class="text-white">8.0</span>
+                </div>
+              </div>
             </div>
 
             <div class="card-body">
@@ -652,6 +1593,15 @@
                   height="60"
                 />
               </a>
+
+              <div class="d-flex align-items-center justify-content-between top-0">
+                <button class="save-btn border-0 position-absolute top-0 start-0 m-2 bg-transparent"><img src="icons/save-blue.svg" alt="" class="save-icon save-blue" width="22" height="22"/>
+                <img src="icons/save-yellow.svg" alt="" class="save-icon save-yellow"  width="22" height="22"/></button>
+
+                <div class="rating d-flex align-items-center justify-content-center gap-2 position-absolute top-0 end-0 m-2 px-2 rounded">
+                  <img src="icons/rating.svg" alt="" width="18" height="18"><span class="text-white">8.0</span>
+                </div>
+              </div>
             </div>
 
             <h5 class="card__title text-truncate" style="max-width: 100%">
@@ -692,6 +1642,15 @@
                   height="60"
                 />
               </a>
+
+              <div class="d-flex align-items-center justify-content-between top-0">
+                <button class="save-btn border-0 position-absolute top-0 start-0 m-2 bg-transparent"><img src="icons/save-blue.svg" alt="" class="save-icon save-blue" width="22" height="22"/>
+                <img src="icons/save-yellow.svg" alt="" class="save-icon save-yellow"  width="22" height="22"/></button>
+
+                <div class="rating d-flex align-items-center justify-content-center gap-2 position-absolute top-0 end-0 m-2 px-2 rounded">
+                  <img src="icons/rating.svg" alt="" width="18" height="18"><span class="text-white">8.0</span>
+                </div>
+              </div>
             </div>
 
             <h5 class="card__title text-truncate" style="max-width: 100%">
@@ -732,6 +1691,15 @@
                   height="60"
                 />
               </a>
+
+              <div class="d-flex align-items-center justify-content-between top-0">
+                <button class="save-btn border-0 position-absolute top-0 start-0 m-2 bg-transparent"><img src="icons/save-blue.svg" alt="" class="save-icon save-blue" width="22" height="22"/>
+                <img src="icons/save-yellow.svg" alt="" class="save-icon save-yellow"  width="22" height="22"/></button>
+
+                <div class="rating d-flex align-items-center justify-content-center gap-2 position-absolute top-0 end-0 m-2 px-2 rounded">
+                  <img src="icons/rating.svg" alt="" width="18" height="18"><span class="text-white">8.0</span>
+                </div>
+              </div>
             </div>
 
             <h5 class="card__title text-truncate" style="max-width: 100%">
@@ -772,6 +1740,15 @@
                   height="60"
                 />
               </a>
+
+              <div class="d-flex align-items-center justify-content-between top-0">
+                <button class="save-btn border-0 position-absolute top-0 start-0 m-2 bg-transparent"><img src="icons/save-blue.svg" alt="" class="save-icon save-blue" width="22" height="22"/>
+                <img src="icons/save-yellow.svg" alt="" class="save-icon save-yellow"  width="22" height="22"/></button>
+
+                <div class="rating d-flex align-items-center justify-content-center gap-2 position-absolute top-0 end-0 m-2 px-2 rounded">
+                  <img src="icons/rating.svg" alt="" width="18" height="18"><span class="text-white">8.0</span>
+                </div>
+              </div>
             </div>
 
             <h5 class="card__title text-truncate mb-0" style="max-width: 100%">
@@ -812,6 +1789,15 @@
                   height="60"
                 />
               </a>
+
+              <div class="d-flex align-items-center justify-content-between top-0">
+                <button class="save-btn border-0 position-absolute top-0 start-0 m-2 bg-transparent"><img src="icons/save-blue.svg" alt="" class="save-icon save-blue" width="22" height="22"/>
+                <img src="icons/save-yellow.svg" alt="" class="save-icon save-yellow"  width="22" height="22"/></button>
+
+                <div class="rating d-flex align-items-center justify-content-center gap-2 position-absolute top-0 end-0 m-2 px-2 rounded">
+                  <img src="icons/rating.svg" alt="" width="18" height="18"><span class="text-white">8.0</span>
+                </div>
+              </div>
             </div>
             <h5 class="card__title text-truncate mb-0" style="max-width: 100%">
               <a
@@ -851,6 +1837,15 @@
                   height="60"
                 />
               </a>
+
+              <div class="d-flex align-items-center justify-content-between top-0">
+                <button class="save-btn border-0 position-absolute top-0 start-0 m-2 bg-transparent"><img src="icons/save-blue.svg" alt="" class="save-icon save-blue" width="22" height="22"/>
+                <img src="icons/save-yellow.svg" alt="" class="save-icon save-yellow"  width="22" height="22"/></button>
+
+                <div class="rating d-flex align-items-center justify-content-center gap-2 position-absolute top-0 end-0 m-2 px-2 rounded">
+                  <img src="icons/rating.svg" alt="" width="18" height="18"><span class="text-white">8.0</span>
+                </div>
+              </div>
             </div>
 
             <h5 class="card__title text-truncate mb-0" style="max-width: 100%">
@@ -891,6 +1886,15 @@
                   height="60"
                 />
               </a>
+
+              <div class="d-flex align-items-center justify-content-between top-0">
+                <button class="save-btn border-0 position-absolute top-0 start-0 m-2 bg-transparent"><img src="icons/save-blue.svg" alt="" class="save-icon save-blue" width="22" height="22"/>
+                <img src="icons/save-yellow.svg" alt="" class="save-icon save-yellow"  width="22" height="22"/></button>
+
+                <div class="rating d-flex align-items-center justify-content-center gap-2 position-absolute top-0 end-0 m-2 px-2 rounded">
+                  <img src="icons/rating.svg" alt="" width="18" height="18"><span class="text-white">8.0</span>
+                </div>
+              </div>
             </div>
 
             <h5 class="card__title text-truncate mb-0" style="max-width: 100%">
@@ -931,6 +1935,15 @@
                   height="60"
                 />
               </a>
+
+              <div class="d-flex align-items-center justify-content-between top-0">
+                <button class="save-btn border-0 position-absolute top-0 start-0 m-2 bg-transparent"><img src="icons/save-blue.svg" alt="" class="save-icon save-blue" width="22" height="22"/>
+                <img src="icons/save-yellow.svg" alt="" class="save-icon save-yellow"  width="22" height="22"/></button>
+
+                <div class="rating d-flex align-items-center justify-content-center gap-2 position-absolute top-0 end-0 m-2 px-2 rounded">
+                  <img src="icons/rating.svg" alt="" width="18" height="18"><span class="text-white">8.0</span>
+                </div>
+              </div>
             </div>
 
             <h5 class="card__title text-truncate mb-0" style="max-width: 100%">
@@ -971,6 +1984,15 @@
                   height="60"
                 />
               </a>
+
+              <div class="d-flex align-items-center justify-content-between top-0">
+                <button class="save-btn border-0 position-absolute top-0 start-0 m-2 bg-transparent"><img src="icons/save-blue.svg" alt="" class="save-icon save-blue" width="22" height="22"/>
+                <img src="icons/save-yellow.svg" alt="" class="save-icon save-yellow"  width="22" height="22"/></button>
+
+                <div class="rating d-flex align-items-center justify-content-center gap-2 position-absolute top-0 end-0 m-2 px-2 rounded">
+                  <img src="icons/rating.svg" alt="" width="18" height="18"><span class="text-white">8.0</span>
+                </div>
+              </div>
             </div>
 
             <h5 class="card__title text-truncate mb-0" style="max-width: 100%">
@@ -1011,6 +2033,15 @@
                   height="60"
                 />
               </a>
+
+              <div class="d-flex align-items-center justify-content-between top-0">
+                <button class="save-btn border-0 position-absolute top-0 start-0 m-2 bg-transparent"><img src="icons/save-blue.svg" alt="" class="save-icon save-blue" width="22" height="22"/>
+                <img src="icons/save-yellow.svg" alt="" class="save-icon save-yellow"  width="22" height="22"/></button>
+
+                <div class="rating d-flex align-items-center justify-content-center gap-2 position-absolute top-0 end-0 m-2 px-2 rounded">
+                  <img src="icons/rating.svg" alt="" width="18" height="18"><span class="text-white">8.0</span>
+                </div>
+              </div>
             </div>
 
             <h5 class="card__title text-truncate mb-0" style="max-width: 100%">
@@ -1052,6 +2083,15 @@
                   height="60"
                 />
               </a>
+
+              <div class="d-flex align-items-center justify-content-between top-0">
+                <button class="save-btn border-0 position-absolute top-0 start-0 m-2 bg-transparent"><img src="icons/save-blue.svg" alt="" class="save-icon save-blue" width="22" height="22"/>
+                <img src="icons/save-yellow.svg" alt="" class="save-icon save-yellow"  width="22" height="22"/></button>
+
+                <div class="rating d-flex align-items-center justify-content-center gap-2 position-absolute top-0 end-0 m-2 px-2 rounded">
+                  <img src="icons/rating.svg" alt="" width="18" height="18"><span class="text-white">8.0</span>
+                </div>
+              </div>
             </div>
 
             <h5 class="card__title text-truncate mb-0" style="max-width: 100%">
@@ -1092,6 +2132,15 @@
                   height="60"
                 />
               </a>
+
+              <div class="d-flex align-items-center justify-content-between top-0">
+                <button class="save-btn border-0 position-absolute top-0 start-0 m-2 bg-transparent"><img src="icons/save-blue.svg" alt="" class="save-icon save-blue" width="22" height="22"/>
+                <img src="icons/save-yellow.svg" alt="" class="save-icon save-yellow"  width="22" height="22"/></button>
+
+                <div class="rating d-flex align-items-center justify-content-center gap-2 position-absolute top-0 end-0 m-2 px-2 rounded">
+                  <img src="icons/rating.svg" alt="" width="18" height="18"><span class="text-white">8.0</span>
+                </div>
+              </div>
             </div>
 
             <h5 class="card__title text-truncate mb-0" style="max-width: 100%">
@@ -1132,6 +2181,15 @@
                   height="60"
                 />
               </a>
+
+              <div class="d-flex align-items-center justify-content-between top-0">
+                <button class="save-btn border-0 position-absolute top-0 start-0 m-2 bg-transparent"><img src="icons/save-blue.svg" alt="" class="save-icon save-blue" width="22" height="22"/>
+                <img src="icons/save-yellow.svg" alt="" class="save-icon save-yellow"  width="22" height="22"/></button>
+
+                <div class="rating d-flex align-items-center justify-content-center gap-2 position-absolute top-0 end-0 m-2 px-2 rounded">
+                  <img src="icons/rating.svg" alt="" width="18" height="18"><span class="text-white">8.0</span>
+                </div>
+              </div>
             </div>
 
             <h5 class="card__title text-truncate mb-0" style="max-width: 100%">
@@ -1172,6 +2230,15 @@
                   height="60"
                 />
               </a>
+
+              <div class="d-flex align-items-center justify-content-between top-0">
+                <button class="save-btn border-0 position-absolute top-0 start-0 m-2 bg-transparent"><img src="icons/save-blue.svg" alt="" class="save-icon save-blue" width="22" height="22"/>
+                <img src="icons/save-yellow.svg" alt="" class="save-icon save-yellow"  width="22" height="22"/></button>
+
+                <div class="rating d-flex align-items-center justify-content-center gap-2 position-absolute top-0 end-0 m-2 px-2 rounded">
+                  <img src="icons/rating.svg" alt="" width="18" height="18"><span class="text-white">8.0</span>
+                </div>
+              </div>
             </div>
 
             <h5 class="card__title text-truncate mb-0" style="max-width: 100%">
@@ -1212,6 +2279,15 @@
                   height="60"
                 />
               </a>
+
+              <div class="d-flex align-items-center justify-content-between top-0">
+                <button class="save-btn border-0 position-absolute top-0 start-0 m-2 bg-transparent"><img src="icons/save-blue.svg" alt="" class="save-icon save-blue" width="22" height="22"/>
+                <img src="icons/save-yellow.svg" alt="" class="save-icon save-yellow"  width="22" height="22"/></button>
+
+                <div class="rating d-flex align-items-center justify-content-center gap-2 position-absolute top-0 end-0 m-2 px-2 rounded">
+                  <img src="icons/rating.svg" alt="" width="18" height="18"><span class="text-white">8.0</span>
+                </div>
+              </div>
             </div>
 
             <h5 class="card__title text-truncate mb-0" style="max-width: 100%">
@@ -1241,7 +2317,7 @@
       </div>
     </section>
 
-    <section id="subscriptions" class="py-5 px-0">
+    <section id="subscriptions" class="py-5 px-0 mb-5">
       <div class="container position-relative">
         <div class="row">
           <div class="col-12">
@@ -1249,9 +2325,15 @@
           </div>
         </div>
 
-        <div class="swiper swiperII mySwiper ">
-          <div class="swiper-button-prev   translate-middle-y ms-0" style="left:-20;"></div>
-          <div class="swiper-button-next  translate-middle-y me-0" style="right:-20;"></div>
+        <div class="swiper swiperII mySwiper">
+          <div
+            class="swiper-button-prev translate-middle-y ms-0"
+            style="left: -20"
+          ></div>
+          <div
+            class="swiper-button-next translate-middle-y me-0"
+            style="right: -20"
+          ></div>
           <div class="swiper-wrapper">
             <div class="swiper-slide sub-swiper position-relative">
               <div class="position-absolute h-100 w-100 bg-muted"></div>
@@ -1368,7 +2450,7 @@
       </div>
     </section>
 
-    <section id="plan">
+    <section id="plan" class="mb-5">
       <div class="container">
         <div class="row">
           <div class="col-12">
@@ -1559,28 +2641,57 @@
       </div>
     </section>
 
-    <section id="segment">
+    <section id="segment" class="mb-5">
       <div class="container">
-        <div class="swiper swiperIII mySwiper segmentSwiper">
+        <div class="swiper swiperIII mySwiper">
           <div class="swiper-wrapper">
-            <div class="swiper-slide  seg-swiper"><img src="movie_img/the-devil-wears-prada-movie-poster.webp" alt="" width="413" height="329" class="rounded-4"></div>
-            <div class="swiper-slide seg-swiper"><img src="movie_img/the-sound-of-music-movie-poster.webp" alt="" width="413" height="329" class="rounded-4"></div>
-            <div class="swiper-slide seg-swiper"><img src="movie_img/no-country-for-old-men-movie-poster.webp" alt="" width="413" height="329" class="rounded-4"></div>
-            <div class="swiper-slide seg-swiper"><img src="movie_img/pulp-fiction-movie-poster.webp" alt="" width="413" height="329" class="rounded-4"></div>
-            <div class="swiper-slide seg-swiper"><img src="movie_img/groundhog-day-movie-poster.webp" alt="" width="413" height="329" class="rounded-4"></div>
-            <div class="swiper-slide seg-swiper"><img src="movie_img/hereditary-movie-poster.webp" alt="" width="413" height="329" class="rounded-4"></div>
-            <div class="swiper-slide seg-swiper"><img src="movie_img/heretic-movie-poster.webp" alt="" width="413" height="329" class="rounded-4"></div>
-            <div class="swiper-slide seg-swiper"><img src="movie_img/fifty-shades-of-grey-movie-poster.webp" alt="" width="413" height="329" class="rounded-4"></div>
-            <div class="swiper-slide seg-swiper"><img src="movie_img/quantum-of-solace-movie-poster.webp" alt="" width="413" height="329" class="rounded-4"></div>
-            <div class="swiper-slide seg-swiper"><img src="movie_img/the-dark-knight-movie-poster.webp" alt="" width="413" height="329" class="rounded-4"></div>
-            <div class="swiper-slide seg-swiper"><img src="movie_img/the-godfather-movie-poster.jpg" alt="" width="413" height="329" class="rounded-4"></div>
-            <div class="swiper-slide seg-swiper"><img src="movie_img/the-notebook-movie-poster.webp" alt="" width="413" height="329" class="rounded-4"></div>
-            <div class="swiper-slide seg-swiper"><img src="movie_img/spectre-theatrical-movie-poster.webp" alt="" width="413" height="329" class="rounded-4"></div>
-            <div class="swiper-slide seg-swiper"><img src="movie_img/the-shawshank-redemption-movie-poster.webp" alt="" width="413" height="329" class="rounded-4"></div>
+            <div class="swiper-slide seg-swiper d-flex flex-column">
+              <img src="utility-imgs/batfleck.jpg" alt="" class="rounded-4" />
+              <p class="text-white seg-text w-100 fw-semibold fs-5 py-0">
+                What Was Ben Affleck Planninig For His Unmade 'Batman' Film
+              </p>
+            </div>
+            <div class="swiper-slide seg-swiper d-flex flex-column">
+              <img
+                src="utility-imgs/ryan-murphy.jpg"
+                alt=""
+                class="rounded-4"
+              />
+              <p class="text-white seg-text w-100 fw-semibold fs-5 py-0">
+                A Guide to the Work of Ryan Murphy
+              </p>
+            </div>
+            <div class="swiper-slide seg-swiper d-flex flex-column">
+              <img src="utility-imgs/mbatha-raw.jpg" alt="" class="rounded-4" />
+              <p class="text-white seg-text w-100 fw-semibold fs-5 py-0">
+                Gugu Mbatha-raw Shares the Films That Give Her Hope
+              </p>
+            </div>
+            <div class="swiper-slide seg-swiper d-flex flex-column">
+              <img src="utility-imgs/best-2020.jpg" alt="" class="rounded-4" />
+              <p class="text-white seg-text w-100 fw-semibold fs-5 py-0">
+                Best of 2020: Trending Moments
+              </p>
+            </div>
+            <div class="swiper-slide seg-swiper d-flex flex-column">
+              <img src="utility-imgs/perception.jpg" alt="" class="rounded-4" />
+              <p class="text-white seg-text w-100 fw-semibold fs-5 py-0">
+                How Movies and TV Shaped Our Perception of HIV/AIDS
+              </p>
+            </div>
+            <div class="swiper-slide seg-swiper d-flex flex-column">
+              <img
+                src="utility-imgs/american-gods.jpg"
+                alt=""
+                class="rounded-4"
+              />
+              <p class="text-white seg-text w-100 fw-semibold fs-5 py-0">
+                American Gods
+              </p>
+            </div>
           </div>
           <div class="swiper-pagination"></div>
         </div>
-  
       </div>
     </section>
 

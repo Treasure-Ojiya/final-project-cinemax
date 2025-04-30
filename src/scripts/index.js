@@ -38,69 +38,9 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
-// Subscription Owl Carousel
-// $(document).ready(function(){
-//   $('.owl-carousel').owlCarousel({
-//     loop: true,
-//     margin: 10,
-//     nav: true,
-//     responsive: {
-//       0: {
-//         items: 1
-//       },
-//       600: {
-//         items: 3
-//       },
-//       1000: {
-//         items: 5
-//       }
-//     }
-//   })
-// })
-
-// $(".owl-carousel").owlCarousel({
-//   loop:true,
-//   autoplay: true,
-//   autoplayTimeout: 5000,
-//   dots:true,
-//   nav:true,
-//   navText:[''],
-//   responsive:{
-//     0:{
-//       items:1,
-//       nav:true
-//     },
-//     768:{
-//       items:2,
-//       nav:true
-//     },
-//     1024:{
-//       items:3,
-//       nav:true
-//     }
-//   }
-// })
-
-// $(document).ready(function(){
-//   $(".owl-carousel").owlCarousel({
-//     loop: true,
-//     margin: 10,
-//     nav: true,
-//     dots: true,
-//     autoplay: true,
-//     autoplayTimeout: 3000,
-//     responsive:{
-//       0:{items:1},
-//       600:{items:2},
-//       1000:{items:3}
-//     }
-//   })
-// });
-
-
 // HERO SWIPER
 let swiperHero = new Swiper(".swiperI", {
-  slidesPerView: 3,
+  slidesPerView: 1,
   spaceBetween: 20,
   pagination: {
     el: ".swiper-pagination",
@@ -112,7 +52,7 @@ let swiperHero = new Swiper(".swiperI", {
       spaceBetween: 20,
     },
     768: {
-      slidesPerView: 4,
+      slidesPerView: 2,
       spaceBetween: 20,
     },
     1024: {
@@ -126,33 +66,35 @@ let swiperHero = new Swiper(".swiperI", {
 let swiperSub = new Swiper(".swiperII", {
   slidesPerView: 5,
   spaceBetween: 20,
-  autoplay:{
-    delay:2500,
-    disableOnInteraction:false,
+  autoplay: {
+    delay: 2500,
+    disableOnInteraction: false,
   },
   pagination: {
     el: ".swiper-pagination",
     clickable: true,
   },
   navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
   },
 });
 
-let swiperSeg = new Swiper(".swiperIII", {
-  slidesPerView: 3,
-  spaceBetween: 20,
-  autoplay:{
-    delay:2500,
-    disableOnInteraction:false,
+let swiperIII = new Swiper(".swiperIII", {
+  slidesPerView: 1,
+  spaceBetween: 10,
+  breakpoints: {
+    1024: {
+      slidesPerView: 3,
+      spaceBetween: 30,
+    },
+  },
+  autoplay: {
+    delay: 2500,
+    disableOnInteraction: false,
   },
   pagination: {
     el: ".swiper-pagination",
     clickable: true,
-  },
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
   },
 });
